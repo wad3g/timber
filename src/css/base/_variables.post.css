@@ -1,0 +1,41 @@
+:root {
+--black: #000;
+--light-grey: #E4E4EA;
+--grey: #6C6D73;
+--dark-grey: #36373F;
+--darker-grey: #11141E;
+--primary-color: #2E3641;
+--secondary-color: #FDEF81;
+--border-color: #bbb;
+--link-color: #ar(--primary-color);
+--font-color: var(--darker-grey);
+--white: #fff;
+
+
+--ff-base: var(--ff-system));
+--ff-base-mono: var(--ff-system-mono);
+--ff-system:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+--ff-system-mono: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+-
+--fw-light: 300;
+--fw-normal: 400;
+--fw-medium: 600;
+--fw-bold: 700;
+--fw-bolder: 800;
+
+--bp-larger-than-mobile: 400px;
+--bp-larger-than-phablet: 550px;
+--bp-larger-than-tablet: 750px;
+--bp-larger-than-desktop: 1000px;
+--bp-larger-than-desktophd: 1200px;
+
+--container-width: 960px;
+--container-width-larger-than-mobile: 85%;
+--container-width-larger-than-phablet: 80%;
+--total-columns: 12;
+--column-width: calc(100% / var(--total-columns));
+--column-margin: 4%;
+--gutter : 10px;
+
+--global-radius: 4px;
+}

@@ -1,0 +1,127 @@
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-normal);
+}
+
+h1 {
+    font-size: 3.998em;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
+
+h2 {
+    font-size: 2.827em;`
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+h3 {
+    font-size: 1.999em;`
+    letter-spacing: 0;
+}
+
+h4 {
+    font-size: 1.414em;`
+    line-height: 1;
+    letter-spacing: -.08rem;
+}
+
+p {
+    line-height: 1.5;`
+    letter-spacing: 0;
+
+    + p {
+        margin-top: 1.5rem;
+    }
+}
+
+
+a:not(.header) {
+    color: var(--link-color);
+    transition: all .2s ease-in-out;
+    text-decoration-color: currentColor;;
+    text-decoration-skip: ink;
+
+    &:hover,
+    &:active {
+        text-decoration-color: var(--primary-color);
+    }
+}
+
+code {
+        font-family: var(--ff-base-mono);
+  margin: 0 .2rem;
+  padding: 2px 8px 3px;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1;
+  border-radius: 0;
+}
+
+pre {
+    max-width: 680px;
+    margin: 0 auto;
+    margin: 20px 25px;
+    position: relative;
+    background: rgba(34, 34, 34, 0.6);
+    border: 0;
+    border-left: 4px solid var(--secondary-color);;
+    border-radius: 0;
+    overflow-x: auto;
+    > code {
+      display: block;
+      white-space: pre;
+      margin: -15px 0 10px 20px;
+    padding: 0;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 2;
+    color: #6C7887;
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+        display: block;
+  }
+ }
+
+ pre.code {
+    margin: 20px 25px;
+    position: relative;
+}
+
+
+ pre.code code {
+font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    display: block;
+    margin: -15px 0 0 20px;
+    padding: 15px 0 15px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 2;
+    color: #6C7887;
+}
+
+pre.code::after {
+    content: "double click to selection";
+    padding: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 18px;
+    top: 7px;
+    font-size: 12px;
+    color: #444;
+    line-height: 20px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+pre:hover::after {
+    opacity: 0;
+    visibility: visible;
+}
