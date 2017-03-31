@@ -10,7 +10,7 @@ module.exports = {
 
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, './dist/'),
+    path: path.resolve(__dirname, './docs/'),
     publicPath: '../',
   },
 
@@ -59,7 +59,7 @@ module.exports = {
     // run the browsersync server
     new BrowserSyncPlugin({
       server: {
-        baseDir: ['./dist/'],
+        baseDir: ['./docs/'],
         index: 'index.html'
       }
   }),
