@@ -1,5 +1,9 @@
 # Timber
-Persona web app starter / boilerplate using PostCSS & Webpack2
+A barebones web app starter / boilerplate built using PostCSS &amp; Webpack2.
+
+**Timber** is a variation of what I personally use as web app starter. It's certaintly a **WIP**, and I've intentionally tried building it with minimal bloat and small in scope.
+
+My objective is for **Timber** to be flexible, easily customized and extended on a per project basis.
 
 ## Features
 - [x] Uses Webpack 2
@@ -26,7 +30,7 @@ Persona web app starter / boilerplate using PostCSS & Webpack2
 Clone the repository
 
 ``` bash
-git clone https://github.com/wad3g/app.git
+git clone https://github.com/wad3g/timber.git
 cd app
 ```
 
@@ -46,3 +50,13 @@ Start watching files for compilation.
 ``` bash
 npm start
 ```
+
+## TO DO
+- [x] Add color maps using `postcss-color-function`
+- [ ] Fix PostCSS Media Variables
+- [ ] Add theming capabilities
+- [ ] Re-Add imagemin-cli
+- [ ] Clean up styles/PostCSS and reduce duplication and redundency
+- [ ] Create better generic, base styles
+- [ ] Continue to reduce bloat
+- [ ] Many others I can't think of right now
