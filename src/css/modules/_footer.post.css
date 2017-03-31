@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: var(--blackish);
+    color: var(--offwhite);
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+    }
+
+    &__nav {
+
+        &-link {
+            color: var(--green-lighter);
+        }
+    }
+
+    &__nav-link
+        +  &__nav-link {
+                margin-left: 10px;
+            }
+}

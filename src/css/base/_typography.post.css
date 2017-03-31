@@ -40,19 +40,6 @@ p {
     }
 }
 
-
-a:not(.header) {
-    color: var(--link-color);
-    transition: all .2s ease-in-out;
-    text-decoration-color: currentColor;;
-    text-decoration-skip: ink;
-
-    &:hover,
-    &:active {
-        text-decoration-color: var(--primary-color);
-    }
-}
-
 code {
         font-family: var(--ff-base-mono);
   margin: 0 .2rem;
@@ -69,9 +56,9 @@ pre {
     margin: 0 auto;
     margin: 20px 25px;
     position: relative;
-    background: rgba(34, 34, 34, 0.6);
+    background: #1F2227;
     border: 0;
-    border-left: 4px solid var(--secondary-color);;
+    border-left: 2px solid #359FE2;
     border-radius: 0;
     overflow-x: auto;
     > code {

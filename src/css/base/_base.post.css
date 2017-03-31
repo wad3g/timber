@@ -22,7 +22,6 @@ body {
     line-height: 1.6;
     font-family: var(--ff-base);
     color: var(--font-color);
-    background-color: var(--light-grey);
     margin: 0;
 }
 
@@ -32,4 +31,15 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid var(--light-grey);
+}
+
+a:not(.header__brand):not(.header__nav-link) {
+    transition: all .2s ease-in-out;
+    text-decoration-color: currentColor;;
+    text-decoration-skip: ink;
+
+    &:hover,
+    &:active {
+        text-decoration-color: var(--primary-color);
+    }
 }

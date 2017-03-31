@@ -3,3 +3,9 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+section {
+    padding: 3rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
