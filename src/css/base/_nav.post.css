@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-brand,
+    &-link {
+        color: var(--offwhite);
+    }
+
+    &-brand {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: var(--fw-bold);
+    }
+
+    &-link {
+        text-decoration: none;
+
+    }
+
+    &-item {
+        font-weight: var(--fw-normal);
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+
+        @media (min-width: 675px) {
+            padding: 1rem 0.5rem;
+        }
+
+        + &__item {
+            margin-left: 5px;
+        }
+    }
+}

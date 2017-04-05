@@ -38,6 +38,10 @@ a:not(.header__brand):not(.header__nav-link) {
     text-decoration-color: currentColor;;
     text-decoration-skip: ink;
 
+    &:visited {
+        color: currentColor;
+    }
+
     &:hover,
     &:active {
         text-decoration-color: var(--primary-color);

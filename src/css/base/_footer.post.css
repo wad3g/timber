@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--blackish);
+    color: var(--offwhite);
+
+    @media screen and (min-width: 675px) {
+        padding: 0 1rem;
+    }
+
+    &__nav {
+        flex-wrap: wrap;
+    }
+
+    &__nav.nav {
+        justify-content: center;
+
+        @media (min-width: 675px) {
+            justify-content: space-between;
+        }
+    }
+}
