@@ -18,24 +18,27 @@
 </head>
 
 <body>
-    <div class="container">
         <header class="header">
-            <div class="header__section">
-                <a class="header__brand" href="#">Timber</a></div>
-            <div class="header__section">
-                <div class="header__nav">
-                    <div class="header__item"><a class="header__nav-link" href="https://github.com/wad3g/Timber/archive/master.zip" rel="noopener">Download</a></div>
-                    <div class="header__item"><a class="header__nav-link" href="https://github.com/wad3g/timber" >GitHub</a></div>
+            <nav class="header__nav nav">
+                <div class="nav-section">
+                    <div class="nav-item">
+                        <a class="nav-brand" href="#">Timber</a>
+                    </div>
                 </div>
-            </div>
-    </div>
+                <div class="nav-section">
+                    <div class="nav-item">
+                        <a class="nav-link" href="https://github.com/wad3g/Timber/archive/master.zip" rel="noopener">Download</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="https://github.com/wad3g/timber" >GitHub</a>
+                    </div>
+                </div>
+            </nav>
     </header>
 
     <div class="hero">
-        <div class="hero__bg">
-            <div class="hero__title">Timber</div>
-            <div class="hero__sub-title">A barebones boilerplate built using PostCSS &amp; Webpack2</div>
-        </div>
+        <div class="hero__title">Timber</div>
+        <div class="hero__sub-title">A barebones boilerplate built using PostCSS &amp; Webpack2</div>
     </div>
 
     <section class="about">
@@ -224,14 +227,23 @@ cd Timber</code></pre>
     </section>
 
     <footer class="footer">
-        <div class="footer__nav">
-            <a class="footer__nav-link" href="https://github.com/wad3g/timber/archive/master.zip" rel="noopener">Download</a>
-            <a class="footer__nav-link" href="https://github.com/wad3g/timber" rel="noopener">Github</a>
-        </div>
-        <div class="footer__copy">
-            <p>&copy; 2017 Timber. All rights reserved.</p>
-        </div>
+        <nav class="footer__nav nav">
+            <div class="nav-section">
+                <div class="nav-item">
+                    <a class="nav-link" href="https://github.com/wad3g/timber/archive/master.zip" rel="noopener">Download</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="https://github.com/wad3g/timber" rel="noopener">Github</a>
+                </div>
+            </div>
+            <div class="nav-section">
+                <div class="nav-item">
+                    <div class="footer__copy">
+                        &copy; 2017 Timber. All rights reserved.
+                    </div>
+                </div>
+            </div>
+            </div>
     </footer>
-    </div>
 </body>
 </html>
