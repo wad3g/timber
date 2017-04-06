@@ -44,6 +44,5 @@ a {
     &:hover,
     &:active {
         color: color(var(--accent-color-3) lightness(-10%));
-        text-decoration-color: color(var(--accent-color-3) lightness(-10%));
     }
 }

@@ -19,15 +19,4 @@
             justify-content: space-between;
         }
     }
-
-    &__copy {
-        &-link {
-            color: var(--gray);
-            text-decoration: none;
-
-            &:hover {
-                color: var(--gray-medium)
-            }
-        }
-    }
 }
