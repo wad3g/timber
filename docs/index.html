@@ -18,29 +18,37 @@
 <link href="../css/app.css" rel="stylesheet"></head>
 
 <body>
-    <div class="container">
         <header class="header">
-            <div class="header__section">
-                <a class="header__brand" href="#">Timber</a></div>
-            <div class="header__section">
-                <div class="header__nav">
-                    <div class="header__item"><a class="header__nav-link" href="https://github.com/wad3g/Timber/archive/master.zip" rel="noopener">Download</a></div>
-                    <div class="header__item"><a class="header__nav-link" href="https://github.com/wad3g/timber" >GitHub</a></div>
+            <nav class="header__nav nav">
+                <div class="nav-section">
+                    <div class="nav-item">
+                        <a class="nav-brand" href="#">Timber</a>
+                    </div>
                 </div>
-            </div>
-    </div>
+                <div class="nav-section">
+                    <div class="nav-item">
+                        <a class="nav-link" href="https://github.com/wad3g/Timber/archive/master.zip" rel="noopener">Download</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="https://github.com/wad3g/timber" >GitHub</a>
+                    </div>
+                </div>
+            </nav>
     </header>
 
     <div class="hero">
-        <div class="hero__bg">
-            <div class="hero__title">Timber</div>
-            <div class="hero__sub-title">A barebones boilerplate built using PostCSS &amp; Webpack2</div>
-        </div>
+        <div class="hero__container">
+        <div class="hero__title">Timber</div>
+        <div class="hero__sub-title">A barebones boilerplate built using PostCSS &amp; Webpack2</div>
+    </div>
+
     </div>
 
     <section class="about">
         <div class="about__container">
             <h2 class="about__title">Features</h2>
+            <h4 class="colors__sub-title">A web app starter to quickly get your site running
+      </h4>
             <div class="about__box-container">
                 <div class="about__box">
                     <h3 class="about__box-title">PostCSS</h3>
@@ -67,7 +75,7 @@
                     <h3 class="about__box-title">Additional Features</h3>
                     <p class="about__box-content">
                         Timber includes many other features for easy, fast local development including:
-                        <ul>
+                        <ul class="about__box-list">
                             <li>Webpack 2</li>
                             <li>ES2015</li>
                             <li>Browsersync</li>
@@ -84,11 +92,14 @@
         <div class="colors__container">
             <h2 class="colors__title">Base Colors</h2>
             <h4 class="colors__sub-title">
-                Accessible SASS-like Color Mapping with PostCSS &amp; Color Function
+                Accessible SASS-like Color Mapping with PostCSS
       </h4>
       <div class="colors__box-container">
           <div class="colors__box">
-      <p class="colors__box-content">Easily generate accessible color maps for <em>any</em> color, instantly. By using the primary color swatches from <a class="colors__box-content-link" href="https://yeun.github.io/open-color/" rel="noopener">Open Color</a> and 3 color-adjuster's from the <a class="colors__box-content-link" href="https://github.com/postcss/postcss-color-function" rel="noopener">postcss-color-function</a> plugin:
+      <p class="colors__box-content">Easily generate accessible color maps for <em>any</em> color, instantly. By using the primary color swatches from <a class="colors__box-content-link" href="https://yeun.github.io/open-color/" rel="noopener">Open Color</a> and 3 color-adjuster's from the <a class="colors__box-content-link" href="https://github.com/postcss/postcss-color-function" rel="noopener">postcss-color-function</a> plugin.
+          <div class="colors__box-title">
+              Example:
+          </div>
             <code class="colors--code">
 /* Violet */
 --violet: #7048E8;
@@ -214,7 +225,7 @@ cd Timber</code></pre>
                 </div>
                 <div class="get-started__box">
                     <div class="get-started__box-title">
-                        Start for local developing and begin watching files for compilation
+                        Start watching files for compilation
                     </div>
                     <pre>
                   <code>yarn start</code></pre>
@@ -224,14 +235,23 @@ cd Timber</code></pre>
     </section>
 
     <footer class="footer">
-        <div class="footer__nav">
-            <a class="footer__nav-link" href="https://github.com/wad3g/timber/archive/master.zip" rel="noopener">Download</a>
-            <a class="footer__nav-link" href="https://github.com/wad3g/timber" rel="noopener">Github</a>
-        </div>
-        <div class="footer__copy">
-            <p>&copy; 2017 Timber. All rights reserved.</p>
-        </div>
+        <nav class="footer__nav nav">
+            <div class="nav-section">
+                <div class="nav-item">
+                    <a class="nav-link" href="https://github.com/wad3g/timber/archive/master.zip" rel="noopener">Download</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="https://github.com/wad3g/timber" rel="noopener">Github</a>
+                </div>
+            </div>
+            <div class="nav-section">
+                <div class="nav-item">
+                    <div class="footer__copy">
+                        <strong>Timber</strong> by <a class="footer__copy-link" href="http://wadegarrett.com">Wade Garrett</a>. All rights reserved.
+                    </div>
+                </div>
+            </div>
+            </div>
     </footer>
-    </div>
 <script type="text/javascript" src="../js/bundle.js"></script></body>
 </html>

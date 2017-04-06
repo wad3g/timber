@@ -12,14 +12,7 @@
     }
 
     &__title {
-        color: var(--primary-color);;
-        font-size: 3rem;
-        font-weight: 600;
-        margin: 0.5rem 0;
-
-        @media screen and (min-width: 675px) {
-            font-size: 4rem;
-        }
+        color: var(--secondary-color);
     }
 
     &__sub-title {
@@ -35,7 +28,7 @@
     &__box-container {
         display: block;
         max-width: 40em;
-        margin: 0 auto;
+        margin: 0 auto 1.5rem auto;
         padding: 1rem 0 0;
 
         @media screen and (min-width: 950px) {
@@ -49,17 +42,9 @@
         display: inline-flex;
         flex-direction: column;
         flex-basis: 400px;
-        line-height: 2;
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 0.025rem;
-        padding: 0 1rem;
 
         &-title {
-            font-size: 1.2rem;
-            letter-spacing: 0.025rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+
         }
 
         &-content {

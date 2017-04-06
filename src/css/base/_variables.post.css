@@ -1,137 +1,53 @@
- :root {
-    /* Base Colors */
-    --grey: #495057;
-    --grey-lighter: color(var(--grey) lightness(+20%) tint(15%));
-    --grey-light: color(var(--grey) lightness(+10%) tint(15%));
-    --grey-medium: color(var(--grey) lightness(-10%) shade(15%));
-    --grey-dark: color(var(--grey) lightness(-20%) shade(15%));
+:root {
+    --ff-base: var(--ff-system);
+    --ff-base-mono: var(--ff-system-mono);
+    --ff-system:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --ff-system-mono: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    -
 
-    /* Red */
-    --red: #F03E3E;
-    --red-lighter: color(var(--red) lightness(+20%) tint(15%));
-    --red-light: color(var(--red) lightness(+10%) tint(15%));
-    --red-medium: color(var(--red) lightness(-10%) shade(15%));
-    --red-dark: color(var(--red) lightness(-20%) shade(15%));
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
 
-    --pink:#D6336C;
-    --pink-lighter: color(var(--pink) lightness(+20%) tint(15%));
-    --pink-light: color(var(--pink) lightness(+10%) tint(15%));
-    --pink-medium: color(var(--pink) lightness(-10%) shade(15%));
-    --pink-dark: color(var(--pink) lightness(-20%) shade(15%));
+    --bp-larger-than-mobile: 400px;
+    --bp-larger-than-phablet: 550px;
+    --bp-larger-than-tablet: 750px;
+    --bp-larger-than-desktop: 1000px;
+    --bp-larger-than-desktophd: 1200px;
 
-    /* Purple */
-    --purple: #AE3EC9;
-    --purple-lighter: color(var(--purple) lightness(+20%) tint(15%));
-    --purple-light: color(var(--purple) lightness(+10%) tint(15%));
-    --purple-medium: color(var(--purple) lightness(-10%) shade(15%));
-    --purple-dark: color(var(--purple) lightness(-20%) shade(15%));
+    --container-width: 960px;
+    --container-width-larger-than-mobile: 85%;
+    --container-width-larger-than-phablet: 80%;
+    --total-columns: 12;
+    --column-width: calc(100% / var(--total-columns));
+    --column-margin: 4%;
+    --gutter : 10px;
 
-    /* Violet */
-    --violet: #7048E8;
-    --violet-lighter: color(var(--violet) lightness(+20%) tint(15%));
-    --violet-light: color(var(--violet) lightness(+10%) tint(15%));
-    --violet-medium: color(var(--violet) lightness(-10%) shade(15%));
-    --violet-dark: color(var(--violet) lightness(-20%) shade(15%));
+    --global-radius: 4px;
 
-    /* Indigo */
-    --indigo: #4263EB;
-    --indigo-lighter: color(var(--indigo) lightness(+20%) tint(15%));
-    --indigo-light: color(var(--indigo) lightness(+10%) tint(15%));
-    --indigo-medium: color(var(--indigo) lightness(-10%) shade(15%));
-    --indigo-dark: color(var(--indigo) lightness(-20%) shade(15%));
+    --primary-color: var(--green-light);
+    --secondary-color: var(--blackish);
+    --accent-color-1: var(--indigo);
+    --accent-color-2: var(--violet-dark);
+    --accent-color-3: var(--red);
+    --border-color: var(--gray);;
+    --text-color: var(--secondary-color);
+    --link-color: var(--primary-color);
+    --font-color: var(--darker-grey);
 
-    /* Blue */
-    --blue: #1C7CD6;
-    --blue-lighter: color(var(--blue) lightness(+20%) tint(15%));
-    --blue-light: color(var(--blue) lightness(+10%) tint(15%));
-    --blue-medium: color(var(--blue) lightness(-10%) shade(15%));
-    --blue-dark: color(var(--blue) lightness(-20%) shade(15%));
+    --btn-default-bg: var(--gray);
+    --btn-default-color: var(--white);
+    --btn-primary-bg: var(--primary-color);
+    --btn-primary-color: var(--blackish);
+    --btn-secondary-bg: var(--light-grey);
+    --btn-secondary-color: var(--blackish);
 
-    /* Cyan */
-    --cyan: #1098AD;
-    --cyan-lighter: color(var(--cyan) lightness(+20%) tint(15%));
-    --cyan-light: color(var(--cyan) lightness(+10%) tint(15%));
-    --cyan-medium: color(var(--cyan) lightness(-10%) shade(15%));
-    --cyan-dark: color(var(--cyan) lightness(-20%) shade(15%));
-
-    --teal: #0CA678;
-    --teal-lighter: color(var(--teal) lightness(+20%) tint(15%));
-    --teal-light: color(var(--teal) lightness(+10%) tint(15%));
-    --teal-medium: color(var(--teal) lightness(-10%) shade(15%));
-    --teal-dark: color(var(--teal) lightness(-20%) shade(15%));
-
-    --green: #37B24D;
-    --green-lighter: color(var(--green) lightness(+20%) tint(15%));
-    --green-light: color(var(--green) lightness(+10%) tint(15%));
-    --green-medium: color(var(--green) lightness(-10%) shade(15%));
-    --green-dark: color(var(--green) lightness(-20%) shade(15%));
-
-    --lime: #74B816;
-    --lime-lighter: color(var(--lime) lightness(+20%) tint(15%));
-    --lime-light: color(var(--lime) lightness(+10%) tint(15%));
-    --lime-medium: color(var(--lime) lightness(-10%) shade(15%));
-    --lime-dark: color(var(--lime) lightness(-20%) shade(15%));
-
-    /* Yellow */
-    --yellow: #EFA342;
-    --yellow-lighter: color(var(--yellow) lightness(+20%) tint(15%));
-    --yellow-light: color(var(--yellow) lightness(+10%) tint(15%));
-    --yellow-medium: color(var(--yellow) lightness(-10%) shade(15%));
-    --yellow-dark: color(var(--yellow) lightness(-20%) shade(15%));
-
-    /* Orange */
-    --orange: #F76707;
-    --orange-lighter: color(var(--orange) lightness(+20%) tint(15%));
-    --orange-light: color(var(--orange) lightness(+10%) tint(15%));
-    --orange-medium: color(var(--orange) lightness(-10%) shade(15%));
-    --orange-dark: color(var(--orange) lightness(-20%) shade(15%));
-
-    /* Grays */
-    --offwhite: #FDFDFD;
-    --black: #202020;
-    --blackish: #191C21;
-    --palegray: #F7F7F7;
-    --gray: #CCC;
-    --text: #484848;
-    --lightgray: #EAEAEA;
-
---black: #000;
---light-grey: #E4E4EA;
---grey: #6C6D73;
---dark-grey: #36373F;
---darker-grey: #11141E;
---primary-color: #2E3641;
---secondary-color: #FDEF81;
---border-color: #bbb;
---link-color: var(--primary-color);
---font-color: var(--darker-grey);
---white: #fff;
-
-
---ff-base: var(--ff-system);
---ff-base-mono: var(--ff-system-mono);
---ff-system:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
---ff-system-mono: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
--
---fw-light: 300;
---fw-normal: 400;
---fw-medium: 600;
---fw-bold: 700;
---fw-bolder: 800;
-
---bp-larger-than-mobile: 400px;
---bp-larger-than-phablet: 550px;
---bp-larger-than-tablet: 750px;
---bp-larger-than-desktop: 1000px;
---bp-larger-than-desktophd: 1200px;
-
---container-width: 960px;
---container-width-larger-than-mobile: 85%;
---container-width-larger-than-phablet: 80%;
---total-columns: 12;
---column-width: calc(100% / var(--total-columns));
---column-margin: 4%;
---gutter : 10px;
-
---global-radius: 4px;
+    --border-radius: 3px;
+    --border-color: transparent;
+    --border-color--focus: rgba(0, 0, 0, 0.125);
 }

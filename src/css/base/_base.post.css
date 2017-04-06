@@ -33,13 +33,16 @@ hr {
   border-top: 1px solid var(--light-grey);
 }
 
-a:not(.header__brand):not(.header__nav-link) {
+a {
+    color: var(--accent-color-3);
+    cursor: pointer;
+    font-weight: 500;
     transition: all .2s ease-in-out;
     text-decoration-color: currentColor;;
     text-decoration-skip: ink;
 
     &:hover,
     &:active {
-        text-decoration-color: var(--primary-color);
+        color: color(var(--accent-color-3) lightness(-10%));
     }
 }

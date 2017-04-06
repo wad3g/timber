@@ -1,150 +1,128 @@
-// Buttons
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: var(--secondary-color);
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: var(--global-radius);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-input {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    display: inline-block;
-    height: 38px;
-    padding: 0 30px;
-    color: var(--secondary-color);
-    text-align: center;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 38px;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: var(--fw-500);
     text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border-radius: var(--global-radius);
-    border: 1px solid var(--border-color);
     cursor: pointer;
-    box-sizing: border-box;
-  }
+    display: inline-block;
+    line-height: 1.2;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: inherit;
+    background-color: transparent;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--border-color--focus);
+        box-shadow: 0 0 0 3px rgba(0,0,0,.25);
+    }
+
+    &--primary {
+        background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-color);
+        border-radius: var(--border-radius);
+
+        &:hover {
+            box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+        }
+
+        &:active {
+            box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125), inset 0 3px 4px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.125);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    &--secondary {
+        background-color: var(--btn-secondary-bg);
+        color: var(--btn-secondary-color);
+        border-radius: var(--border-radius);
+
+        &:hover {
+            box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+        }
+
+        &:active {
+            box-shadow: inset 0 0 0 20rem rgba(0,0,0,0.125), inset 0 3px 4px 0 rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.125);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    &--outline {
+        border-color: currentColor;
+        border-radius: var(--border-radius);
+
+        &:hover {
+            border-color: currentColor;
+            box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+        }
+
+        &:active {
+            box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125), inset 0 3px 4px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.125);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    &--big {
+        padding: 1rem 1.25rem;
+    }
+
+    &--small {
+        padding: 0.25rem 0.5rem;
+    }
 }
 
-.button:hover,
-button:hover {
-  color: var(--dark-grey);
-  border-color: color(var(--dark-grey) lightness(33.5%));
-  outline: 0;
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    > {
+        &:first-child:not(:last-child) {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            float: left;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+
+        &:last-child:not(:first-child) {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
+
+    .btn + .btn {
+        margin-left: -1px;
+    }
 }
 
-input {
-  &[type="submit"]:hover,
-  &[type="reset"]:hover,
-  &[type="button"]:hover {
-    color: var(--dark-grey);
-    border-color: color(var(--dark-grey) lightness(33.5%));
-    outline: 0;
-  }
+.btn-block {
+    display: block;
+    width: 100%;
 }
 
-.button:focus,
-button:focus {
-  color: var(--dark-grey);
-  border-color: color(var(--dark-grey) lightness(33.5%));
-  outline: 0;
-}
-
-input {
-  &[type="submit"]:focus,
-  &[type="reset"]:focus,
-  &[type="button"]:focus {
-    color: var(--dark-grey);
-    border-color: color(var(--dark-grey) lightness(33.5%));
-    outline: 0;
-  }
-}
-
-.button.button-primary,
-button.button-primary {
-  color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-input {
-  &[type="submit"].button-primary,
-  &[type="reset"].button-primary,
-  &[type="button"].button-primary {
-    color: #fff;
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-  }
-}
-
-.button.button-primary:hover,
-button.button-primary:hover {
-  color: #fff;
-  background-color: var(--link-color);
-  border-color: var(--link-color);
-}
-
-input {
-  &[type="submit"].button-primary:hover,
-  &[type="reset"].button-primary:hover,
-  &[type="button"].button-primary:hover {
-    color: #fff;
-    background-color: var(--link-color);
-    border-color: var(--link-color);
-  }
-}
-
-.button.button-primary:focus,
-button.button-primary:focus {
-  color: #fff;
-  background-color: var(--link-color);
-  border-color: var(--link-color);
-}
-
-input {
-  &[type="submit"].button-primary:focus,
-  &[type="reset"].button-primary:focus,
-  &[type="button"].button-primary:focus {
-    color: #fff;
-    background-color: var(--link-color);
-    border-color: var(--link-color);
-  }
-  &[type="email"],
-  &[type="number"],
-  &[type="search"],
-  &[type="text"],
-  &[type="tel"],
-  &[type="url"],
-  &[type="password"] {
-    height: 38px;
-    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
-    background-color: #fff;
-    border: 1px solid lighten(border-color, 8.8%);
-    border-radius: var(--global-radius);
-    box-shadow: none;
-    box-sizing: border-box;
-  }
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }

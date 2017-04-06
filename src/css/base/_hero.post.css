@@ -1,0 +1,38 @@
+
+.hero {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+    flex-shrink: 1;
+    min-height: 40vh;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    @media screen and (min-width: 675px) {
+        min-height: 60vh;
+    }
+
+    &__container {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+
+    &__title {
+        color: var(--primary-color);
+        font-size: calc(100% + 16vw);
+        font-weight: var(--fw-600);
+        margin-top: -3rem;
+        letter-spacing: -0.0125em;
+        line-height: 1;
+    }
+
+    &__sub-title {
+        color: var(--offwhite);
+        font-size: calc(50% + 1vw);
+        font-weight: var(--fw-400);
+        letter-spacing: 0.025em;
+        margin-bottom: 1.5rem
+    }
+}

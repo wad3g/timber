@@ -1,0 +1,90 @@
+:root {
+    --grey: #495057;
+    --grey-lighter: color(var(--grey) lightness(+20%) tint(15%));
+    --grey-light: color(var(--grey) lightness(+10%) tint(15%));
+    --grey-medium: color(var(--grey) lightness(-10%) shade(15%));
+    --grey-dark: color(var(--grey) lightness(-20%) shade(15%));
+
+    --red: #F03E3E;
+    --red-lighter: color(var(--red) lightness(+20%) tint(15%));
+    --red-light: color(var(--red) lightness(+10%) tint(15%));
+    --red-medium: color(var(--red) lightness(-10%) shade(15%));
+    --red-dark: color(var(--red) lightness(-20%) shade(15%));
+    --pink: #D6336C;
+    --pink-lighter: color(var(--pink) lightness(+20%) tint(15%));
+    --pink-light: color(var(--pink) lightness(+10%) tint(15%));
+    --pink-medium: color(var(--pink) lightness(-10%) shade(15%));
+    --pink-dark: color(var(--pink) lightness(-20%) shade(15%));
+
+    --purple: #AE3EC9;
+    --purple-lighter: color(var(--purple) lightness(+20%) tint(15%));
+    --purple-light: color(var(--purple) lightness(+10%) tint(15%));
+    --purple-medium: color(var(--purple) lightness(-10%) shade(15%));
+    --purple-dark: color(var(--purple) lightness(-20%) shade(15%));
+
+    --violet: #7048E8;
+    --violet-lighter: color(var(--violet) lightness(+20%) tint(15%));
+    --violet-light: color(var(--violet) lightness(+10%) tint(15%));
+    --violet-medium: color(var(--violet) lightness(-10%) shade(15%));
+    --violet-dark: color(var(--violet) lightness(-20%) shade(15%));
+
+    --indigo: #4263EB;
+    --indigo-lighter: color(var(--indigo) lightness(+20%) tint(15%));
+    --indigo-light: color(var(--indigo) lightness(+10%) tint(15%));
+    --indigo-medium: color(var(--indigo) lightness(-10%) shade(15%));
+    --indigo-dark: color(var(--indigo) lightness(-20%) shade(15%));
+
+    --blue: #1C7CD6;
+    --blue-lighter: color(var(--blue) lightness(+20%) tint(15%));
+    --blue-light: color(var(--blue) lightness(+10%) tint(15%));
+    --blue-medium: color(var(--blue) lightness(-10%) shade(15%));
+    --blue-dark: color(var(--blue) lightness(-20%) shade(15%));
+
+    --cyan: #1098AD;
+    --cyan-lighter: color(var(--cyan) lightness(+20%) tint(15%));
+    --cyan-light: color(var(--cyan) lightness(+10%) tint(15%));
+    --cyan-medium: color(var(--cyan) lightness(-10%) shade(15%));
+    --cyan-dark: color(var(--cyan) lightness(-20%) shade(15%));
+
+    --teal: #0CA678;
+    --teal-lighter: color(var(--teal) lightness(+20%) tint(15%));
+    --teal-light: color(var(--teal) lightness(+10%) tint(15%));
+    --teal-medium: color(var(--teal) lightness(-10%) shade(15%));
+    --teal-dark: color(var(--teal) lightness(-20%) shade(15%));
+
+    --green: #37B24D;
+    --green-lighter: color(var(--green) lightness(+20%) tint(15%));
+    --green-light: color(var(--green) lightness(+10%) tint(15%));
+    --green-medium: color(var(--green) lightness(-10%) shade(15%));
+    --green-dark: color(var(--green) lightness(-20%) shade(15%));
+
+    --lime: #74B816;
+    --lime-lighter: color(var(--lime) lightness(+20%) tint(15%));
+    --lime-light: color(var(--lime) lightness(+10%) tint(15%));
+    --lime-medium: color(var(--lime) lightness(-10%) shade(15%));
+    --lime-dark: color(var(--lime) lightness(-20%) shade(15%));
+
+    --yellow: #EFA342;
+    --yellow-lighter: color(var(--yellow) lightness(+20%) tint(15%));
+    --yellow-light: color(var(--yellow) lightness(+10%) tint(15%));
+    --yellow-medium: color(var(--yellow) lightness(-10%) shade(15%));
+    --yellow-dark: color(var(--yellow) lightness(-20%) shade(15%));
+
+    --orange: #F76707;
+    --orange-lighter: color(var(--orange) lightness(+20%) tint(15%));
+    --orange-light: color(var(--orange) lightness(+10%) tint(15%));
+    --orange-medium: color(var(--orange) lightness(-10%) shade(15%));
+    --orange-dark: color(var(--orange) lightness(-20%) shade(15%));
+
+    --offwhite: #FDFDFD;
+    --white: #fff;
+    --black: #202020;
+    --blackish: #191C21;
+    --palegray: #F7F7F7;
+    --text: #484848;
+    --black: #000;
+    --light-grey: #E4E4EA;
+    --grey: #6C6D73;
+    --dark-grey: #36373F;
+    --darker-grey: #11141E;
+}
