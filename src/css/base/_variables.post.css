@@ -4,11 +4,15 @@
 --ff-system:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 --ff-system-mono: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
 -
---fw-light: 300;
---fw-normal: 400;
---fw-medium: 600;
---fw-bold: 700;
---fw-bolder: 800;
+
+--fw-200: 200;
+--fw-300: 300;
+--fw-400: 400;
+--fw-500: 500;
+--fw-600: 600;
+--fw-700: 700;
+--fw-800: 800;
+--fw-900: 900;
 
 --bp-larger-than-mobile: 400px;
 --bp-larger-than-phablet: 550px;
@@ -25,4 +29,26 @@
 --gutter : 10px;
 
 --global-radius: 4px;
+
+
+--primary-color: var(--green-light);
+--secondary-color: var(--blackish);
+--accent-color-1: var(--indigo);
+--accent-color-2: var(--violet-dark);
+--accent-color-3: var(--red);
+--border-color: var(--gray);;
+--text-color: var(--secondary-color);
+--link-color: var(--primary-color);
+--font-color: var(--darker-grey);
+
+--btn-default-bg: var(--gray);
+--btn-default-color: var(--white);
+--btn-primary-bg: var(--primary-color);
+--btn-primary-color: var(--blackish);
+--btn-secondary-bg: var(--light-grey);
+--btn-secondary-color: var(--blackish);
+
+--border-radius: 3px;
+--border-color: transparent;
+--border-color--focus: rgba(0, 0, 0, 0.125);
 }
