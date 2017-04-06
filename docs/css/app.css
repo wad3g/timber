@@ -655,7 +655,8 @@ p + ul {
     }
 }
 
-[class*="__box-content"] {
+[class*="__box-content"],
+[class*="__box-list"] {
     font-size: 1.125rem;
     line-height: 2;
     letter-spacing: 0.025rem;
