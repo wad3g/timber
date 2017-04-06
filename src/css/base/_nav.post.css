@@ -11,21 +11,16 @@
     &-brand,
     &-link {
         color: var(--offwhite);
+        text-decoration: none;
     }
 
     &-brand {
-        text-decoration: none;
         font-size: 2rem;
-        font-weight: var(--fw-bold);
-    }
-
-    &-link {
-        text-decoration: none;
-
+        font-weight: var(--fw-600);
     }
 
     &-item {
-        font-weight: var(--fw-normal);
+        font-weight: var(--fw-400);
         display: flex;
         align-items: center;
         padding: 0.5rem;
