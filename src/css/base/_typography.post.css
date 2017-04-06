@@ -5,7 +5,7 @@ h3,
 h4,
 p {
     font-family: var(--ff-base);
-    font-weight: var(--fw-normal);
+    font-weight: var(--fw-400);
 }
 
 h1 {
@@ -38,7 +38,49 @@ p {
     + p {
         margin-top: 1.5rem;
     }
+
+    + ul {
+        margin: 0;
+    }
 }
+
+[class*="__title"]:not(.hero__title) {
+    font-weight: var(--fw-600);
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+
+
+    @media screen and (min-width: 675px) {
+        font-size: 4rem;
+    }
+}
+
+[class*="__sub-title"]:not(.hero__sub-title) {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.5rem 0 1.5rem 0;
+    letter-spacing: 0;
+    text-align: center;
+
+    @media (min-width: 675px) {
+        font-size: 1rem;;
+    }
+}
+
+[class*="__box-content"] {
+    font-size: 1.125rem;
+    line-height: 2;
+    letter-spacing: 0.025rem;
+}
+
+[class*="__box-title"] {
+    font-size: 1rem;
+    letter-spacing: 0.025rem;
+    font-weight: var(--fw-600);
+    margin-bottom: 0.5rem;
+}
+
 
 code {
         font-family: var(--ff-base-mono);
@@ -58,7 +100,7 @@ pre {
     position: relative;
     background: #1F2227;
     border: 0;
-    border-left: 2px solid #359FE2;
+    border-left: 2px solid var(--accent-color-1);
     border-radius: 0;
     overflow-x: auto;
     > code {

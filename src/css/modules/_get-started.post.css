@@ -1,34 +1,17 @@
 .get-started {
-    background-color: var(--blackish);
+    background-color: var(--secondary-color);
 
     &__container {
         max-width: 45em;
         margin: 0 auto;
     }
 
-    &__title,
-    &__sub-title {
-        text-align: center;
-    }
-
     &__title {
-        color:var(--green-light);
-        font-size: 3rem;
-        font-weight: 200;
-        margin: 0.5rem 0;
-        padding-top: 1.5rem;
-
-        @media screen and (min-width: 675px) {
-            font-size: 4rem;
-            line-height: 1;
-        }
+        color:var(--white);
     }
 
     &__sub-title {
         color: var(--grey-lighter);
-        font-size: 1rem;
-        font-weight: 300;
-        letter-spacing: 0;
     }
 
     &__box-container {
