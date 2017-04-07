@@ -1,6 +1,7 @@
 var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+var StyleLintPlugin = require('stylelint-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -56,12 +57,20 @@ module.exports = {
     // save bundle css as an external file
     new ExtractTextPlugin('css/app.css'),
 
+    new StyleLintPlugin({
+       configFile: 'stylelint.config.js',
+       context: 'src',
+       files: '**/*.css',
+       failOnError: false,
+       quiet: false,
+    }),
+
     // run the browsersync server
     new BrowserSyncPlugin({
       server: {
         baseDir: ['./docs/'],
         index: 'index.html'
-      }
+    },
   }),
 
     new HtmlWebpackPlugin({
