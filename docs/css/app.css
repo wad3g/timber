@@ -1,17 +1,5 @@
 /* Base files. */
 
-:root {
-    -
-
-    --fw-200: 200;
-}
-
-// Base Styles
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-// NOTE
-// html is set to 62.5% so that all the REM measurements throughout Skeleton
-// are based on 10px sizing. So basically 1.5rem = 15px :)
-
 * {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
@@ -26,34 +14,24 @@ html {
 
 body {
     line-height: 1.6;
-    font-family
-
-    : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    color
-
-    : #11141E;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #11141E;
     margin: 0;
 }
 
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top
-
-    : 1px solid #E4E4EA;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #E4E4EA;
 }
 
 a {
-    color
-
-    : #F03E3E;
+    color: #F03E3E;
     cursor: pointer;
     font-weight: 500;
-    -webkit-transition
-
-    : all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -webkit-text-decoration-color: currentColor;
             text-decoration-color: currentColor;;
     -webkit-text-decoration-skip: ink;;
@@ -62,27 +40,22 @@ a {
 
 a:hover,
     a:active {
-    color
-
-    : rgb(232, 17, 17);
+    color: rgb(232, 17, 17);
 }
 
 .btn {
     font-family: inherit;
     font-size: inherit;
-    font-weight
-
-    : 500;
+    font-weight: 500;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
     line-height: 1.2;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 0;
     height: auto;
     border: 1px solid transparent;
     vertical-align: middle;
-    -webkit-appearance: none;
     color: inherit;
     background-color: transparent;
 }
@@ -93,30 +66,22 @@ a:hover,
 
 .btn:focus {
     outline: none;
-    border-color
-
-    : rgba(0, 0, 0, 0.125);
-    box-shadow: 0 0 0 3px rgba(0,0,0,.25);
+    border-color: rgba(0, 0, 0, 0.125);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0,0.25);
 }
 
 .btn--primary {
-    background-color
-
-    : rgb(109, 210, 128);
-    color
-
-    : #191C21;
-    border-radius
-
-    : 3px;
+    background-color: rgb(109, 210, 128);
+    color: #191C21;
+    border-radius: 3px;
 }
 
 .btn--primary:hover {
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
 
 .btn--primary:active {
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125), inset 0 3px 4px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.125);
+    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125), inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
 }
 
 .btn--primary:disabled {
@@ -124,23 +89,17 @@ a:hover,
 }
 
 .btn--secondary {
-    background-color
-
-    : #E4E4EA;
-    color
-
-    : #191C21;
-    border-radius
-
-    : 3px;
+    background-color: #E4E4EA;
+    color: #191C21;
+    border-radius: 3px;
 }
 
 .btn--secondary:hover {
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
 
 .btn--secondary:active {
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,0.125), inset 0 3px 4px 0 rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.125);
+    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125), inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
 }
 
 .btn--secondary:disabled {
@@ -149,18 +108,16 @@ a:hover,
 
 .btn--outline {
     border-color: currentColor;
-    border-radius
-
-    : 3px;
+    border-radius: 3px;
 }
 
 .btn--outline:hover {
     border-color: currentColor;
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
 }
 
 .btn--outline:active {
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125), inset 0 3px 4px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.125);
+    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125), inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
 }
 
 .btn--outline:disabled {
@@ -208,8 +165,8 @@ a:hover,
 }
 
 ::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 .footer {
@@ -219,20 +176,14 @@ a:hover,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color
-
-    : #191C21;
-    color
-
-    : #FDFDFD;
+    background-color: #191C21;
+    color: #FDFDFD;
 }
 
 @media screen and (min-width: 675px) {
 
     .footer {
-        padding
-
-    : 0 1rem;
+        padding: 0 1rem;
     }
 }
 
@@ -250,104 +201,66 @@ a:hover,
 @media (min-width: 675px) {
 
     .footer__nav.nav {
-        -webkit-box-pack
-
-    : justify;
-            -ms-flex-pack
-
-    : justify;
-                justify-content
-
-    : space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 }
 
-// Forms
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
-  background-color: #fff;
-  border: 1px solid lighten(border-color, 8.8%);
-  border-radius
-
-    : 4px;
-  box-shadow: none;
-  box-sizing: border-box;
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid lighten(border-color, 8.8%);
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
 }
 
-// Removes awkward default styles on some inputs for iOS
-input[type="email"],
-  // Removes awkward default styles on some inputs for iOS
-input[type="number"],
-  // Removes awkward default styles on some inputs for iOS
-input[type="search"],
-  // Removes awkward default styles on some inputs for iOS
-input[type="text"],
-  // Removes awkward default styles on some inputs for iOS
-input[type="tel"],
-  // Removes awkward default styles on some inputs for iOS
-input[type="url"],
-  // Removes awkward default styles on some inputs for iOS
-input[type="password"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="search"]:focus,
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus {
-    border
-
-    : 1px solid rgb(109, 210, 128);
+textarea:focus, select:focus {
+    border: 1px solid rgb(109, 210, 128);
     outline: 0;
 }
 
-textarea:focus,
-select:focus {
-  border
+input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
 
-    : 1px solid rgb(109, 210, 128);
-  outline: 0;
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
+    border: 1px solid rgb(109, 210, 128);
+    outline: 0;
+}
+
+input[type="checkbox"],
+    input[type="radio"] {
+    display: inline;
 }
 
 label,
 legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 fieldset {
-  padding: 0;
-  border-width: 0;
-}
-
-input[type="checkbox"],
-  input[type="radio"] {
-    display: inline;
+    padding: 0;
+    border-width: 0;
 }
 
 label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal;
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-weight: 400;
 }
 
 .header {
@@ -357,17 +270,13 @@ label > .label-body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color
-
-    : #191C21;
+    background-color: #191C21;
 }
 
 @media screen and (min-width: 675px) {
 
     .header {
-        padding
-
-    : 0 1rem;
+        padding: 0 1rem;
     }
 }
 
@@ -377,9 +286,7 @@ label > .label-body {
 }
 
 .hero {
-    background-color
-
-    : #191C21;
+    background-color: #191C21;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -403,9 +310,7 @@ label > .label-body {
 @media screen and (min-width: 675px) {
 
     .hero {
-        min-height
-
-    : 60vh;
+        min-height: 60vh;
     }
 }
 
@@ -415,28 +320,20 @@ label > .label-body {
 }
 
 .hero__title {
-    color
-
-    : rgb(109, 210, 128);
+    color: rgb(109, 210, 128);
     font-size: calc(100% + 16vw);
-    font-weight
-
-    : 600;
+    font-weight: 600;
     margin-top: -3rem;
     letter-spacing: -0.0125em;
     line-height: 1;
 }
 
 .hero__sub-title {
-    color
-
-    : #FDFDFD;
+    color: #FDFDFD;
     font-size: calc(50% + 1vw);
-    font-weight
-
-    : 400;
+    font-weight: 400;
     letter-spacing: 0.025em;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
 }
 
 .container {
@@ -478,23 +375,17 @@ section {
 
 .nav-brand,
     .nav-link {
-    color
-
-    : #FDFDFD;
+    color: #FDFDFD;
     text-decoration: none;
 }
 
 .nav-brand {
     font-size: 2rem;
-    font-weight
-
-    : 600;
+    font-weight: 600;
 }
 
 .nav-item {
-    font-weight
-
-    : 400;
+    font-weight: 400;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -507,9 +398,7 @@ section {
 @media (min-width: 675px) {
 
     .nav-item {
-        padding
-
-    : 1rem 0.5rem;
+        padding: 1rem 0.5rem;
     }
 }
 
@@ -517,19 +406,16 @@ section {
     margin-left: 5px;
 }
 
-// Spacing
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 button,
-.button {
-  margin-bottom: 1rem;
+.btn {
+    margin-bottom: 1rem;
 }
 
 input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 pre,
@@ -541,7 +427,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 ul,
@@ -549,26 +435,21 @@ ol {
     margin-left: 2rem;
 }
 
-// Tables
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 th,
 td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom
-
-    : 1px solid #E4E4EA;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E4E4EA;
 }
 
 th:first-child,
 td:first-child {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 th:last-child,
 td:last-child {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 h1,
@@ -576,39 +457,35 @@ h2,
 h3,
 h4,
 p {
-    font-family
-
-    : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-weight
-
-    : 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 400;
 }
 
 h1 {
     font-size: 3.998em;
     line-height: 1.2;
-    letter-spacing: -.1rem;
+    letter-spacing: -0.1rem;
 }
 
 h2 {
-    font-size: 2.827em;`
+    font-size: 2.827em;
     line-height: 1;
     letter-spacing: 0;
 }
 
 h3 {
-    font-size: 1.999em;`
+    font-size: 1.999em;
     letter-spacing: 0;
 }
 
 h4 {
-    font-size: 1.414em;`
+    font-size: 1.414em;
     line-height: 1;
-    letter-spacing: -.08rem;
+    letter-spacing: -0.08rem;
 }
 
 p {
-    line-height: 1.5;`
+    line-height: 1.5;
     letter-spacing: 0;
 }
 
@@ -621,27 +498,23 @@ p + ul {
 }
 
 [class*="__title"]:not(.hero__title) {
-    font-weight
-
-    : 600;
+    font-weight: 600;
     font-size: 3rem;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem;
     text-align: center;
 }
 
 @media screen and (min-width: 675px) {
 
     [class*="__title"]:not(.hero__title) {
-        font-size
-
-    : 4rem;
+        font-size: 4rem;
     }
 }
 
 [class*="__sub-title"]:not(.hero__sub-title) {
     font-size: 0.9rem;
     font-weight: 500;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 0.5rem 0 1.5rem;
     letter-spacing: 0;
     text-align: center;
 }
@@ -649,9 +522,7 @@ p + ul {
 @media (min-width: 675px) {
 
     [class*="__sub-title"]:not(.hero__sub-title) {
-        font-size
-
-    : 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -665,23 +536,19 @@ p + ul {
 [class*="__box-title"] {
     font-size: 1rem;
     letter-spacing: 0.025rem;
-    font-weight
-
-    : 600;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 code {
-        font-family
-
-    : "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
-  margin: 0 .2rem;
-  padding: 2px 8px 3px;
-  white-space: nowrap;
-  overflow-x: auto;
-  font-size: 0.9rem;
-  line-height: 1;
-  border-radius: 0;
+    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    margin: 0 0.2rem;
+    padding: 2px 8px 3px;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-radius: 0;
 }
 
 pre {
@@ -691,12 +558,10 @@ pre {
     position: relative;
     background: #1F2227;
     border: 0;
-    border-left
-
-    : 2px solid #4263EB;
+    border-left: 2px solid #4263EB;
     border-radius: 0;
     overflow-x: auto;
- }
+}
 
 pre > code {
     display: block;
@@ -707,8 +572,7 @@ pre > code {
     font-size: 0.9rem;
     line-height: 2;
     color: #6C7887;
-    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
-    display: block;
+    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
 }
 
 pre.code {
@@ -717,10 +581,10 @@ pre.code {
 }
 
 pre.code code {
-font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     display: block;
     margin: -15px 0 0 20px;
-    padding: 15px 0 15px;
+    padding: 15px 0;
     overflow-x: auto;
     font-size: 0.9rem;
     line-height: 2;
@@ -736,13 +600,10 @@ pre.code::after {
     right: 18px;
     top: 7px;
     font-size: 12px;
-    color: #444;
+    color: #444444;
     line-height: 20px;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transition
-
-    : all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -751,25 +612,22 @@ pre:hover::after {
     visibility: visible;
 }
 
-// Utilities
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 .u-full-width {
-  width: 100%;
-  box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .u-pull-right {
-  float: right;
+    float: right;
 }
 
 .u-pull-left {
-  float: left;
+    float: left;
 }
 
 .u-hidden {
@@ -779,7 +637,7 @@ pre:hover::after {
 /* Modules */
 
 .about {
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 .about__container {
@@ -793,9 +651,7 @@ pre:hover::after {
 }
 
 .about__title {
-    color
-
-    : #191C21;
+    color: #191C21;
 }
 
 .about__sub-title {
@@ -807,9 +663,7 @@ pre:hover::after {
 @media screen and (min-width: 675px) {
 
     .about__sub-title {
-        font-size
-
-    : 1.2rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -823,27 +677,13 @@ pre:hover::after {
 @media screen and (min-width: 950px) {
 
     .about__box-container {
-        display
-
-    : -webkit-box;
-        display
-
-    : -ms-flexbox;
-        display
-
-    : flex;
-        max-width
-
-    : 100%;
-        -webkit-box-pack
-
-    : center;
-            -ms-flex-pack
-
-    : center;
-                justify-content
-
-    : center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -870,9 +710,7 @@ pre:hover::after {
 }
 
 .colors {
-    background-color
-
-    : #E4E4EA;
+    background-color: #E4E4EA;
 }
 
 .colors__container {
@@ -883,9 +721,7 @@ pre:hover::after {
 .colors__title {}
 
 .colors__sub-title {
-    color
-
-    : rgb(37, 119, 52);
+    color: rgb(37, 119, 52);
 }
 
 .colors__box-container {
@@ -898,27 +734,13 @@ pre:hover::after {
 @media screen and (min-width: 950px) {
 
     .colors__box-container {
-        display
-
-    : -webkit-box;
-        display
-
-    : -ms-flexbox;
-        display
-
-    : flex;
-        max-width
-
-    : 40em;
-        -webkit-box-pack
-
-    : center;
-            -ms-flex-pack
-
-    : center;
-                justify-content
-
-    : center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 40em;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -938,9 +760,7 @@ pre:hover::after {
 .colors__box-content {}
 
 .colors--code {
-    color
-
-    : #191C21;
+    color: #191C21;
     white-space: pre-line;
     line-height: 2;
     display: -webkit-box;
@@ -973,12 +793,8 @@ pre:hover::after {
 @media (min-width: 675px) {
 
     .column--color {
-        height
-
-    : 5vw;
-        width
-
-    : 5vw;
+        height: 5vw;
+        width: 5vw;
     }
 }
 
@@ -997,464 +813,332 @@ pre:hover::after {
 }
 
 .grey {
-    background-color
-
-    : #6C6D73;
-    color: white;
+    background-color: #6C6D73;
+    color: #FFFFFF;
 }
 
 .grey-dark {
-    background-color
-
-    : rgb(50, 51, 54);
-    color: white;
+    background-color: rgb(50, 51, 54);
+    color: #FFFFFF;
 }
 
 .grey-medium {
-    background-color
-
-    : rgb(71, 72, 76);
-    color: white;
+    background-color: rgb(71, 72, 76);
+    color: #FFFFFF;
 }
 
 .grey-light {
-    background-color
-
-    : rgb(152, 153, 158);
-    color: white;
+    background-color: rgb(152, 153, 158);
+    color: #FFFFFF;
 }
 
 .grey-lighter {
-    background-color
-
-    : rgb(174, 175, 179);
-    color: white;
+    background-color: rgb(174, 175, 179);
+    color: #FFFFFF;
 }
 
 .red {
-    background-color
-
-    : #F03E3E;
-    color: white;
+    background-color: #F03E3E;
+    color: #FFFFFF;
 }
 
 .red-dark {
-    background-color
-
-    : rgb(157, 12, 12);
-    color: white;
+    background-color: rgb(157, 12, 12);
+    color: #FFFFFF;
 }
 
 .red-medium {
-    background-color
-
-    : rgb(197, 14, 14);
-    color: white;
+    background-color: rgb(197, 14, 14);
+    color: #FFFFFF;
 }
 
 .red-light {
-    background-color
-
-    : rgb(246, 130, 130);
-    color: white;
+    background-color: rgb(246, 130, 130);
+    color: #FFFFFF;
 }
 
 .red-lighter {
-    background-color
-
-    : rgb(249, 170, 170);
-    color: white;
+    background-color: rgb(249, 170, 170);
+    color: #FFFFFF;
 }
 
 .pink {
-    background-color
-
-    : #D6336C;
-    color: white;
+    background-color: #D6336C;
+    color: #FFFFFF;
 }
 
 .pink-dark {
-    background-color
-
-    : rgb(116, 23, 55);
-    color: white;
+    background-color: rgb(116, 23, 55);
+    color: #FFFFFF;
 }
 
 .pink-medium {
-    background-color
-
-    : rgb(152, 30, 73);
-    color: white;
+    background-color: rgb(152, 30, 73);
+    color: #FFFFFF;
 }
 
 .pink-light {
-    background-color
-
-    : rgb(228, 117, 156);
-    color: white;
+    background-color: rgb(228, 117, 156);
+    color: #FFFFFF;
 }
 
 .pink-lighter {
-    background-color
-
-    : rgb(235, 154, 182);
-    color: white;
+    background-color: rgb(235, 154, 182);
+    color: #FFFFFF;
 }
 
 .purple {
-    background-color
-
-    : #AE3EC9;
-    color: white;
+    background-color: #AE3EC9;
+    color: #FFFFFF;
 }
 
 .purple-dark {
-    background-color
-
-    : rgb(93, 31, 108);
-    color: white;
+    background-color: rgb(93, 31, 108);
+    color: #FFFFFF;
 }
 
 .purple-medium {
-    background-color
-
-    : rgb(122, 40, 142);
-    color: white;
+    background-color: rgb(122, 40, 142);
+    color: #FFFFFF;
 }
 
 .purple-light {
-    background-color
-
-    : rgb(201, 127, 218);
-    color: white;
+    background-color: rgb(201, 127, 218);
+    color: #FFFFFF;
 }
 
 .purple-lighter {
-    background-color
-
-    : rgb(215, 161, 229);
-    color: white;
+    background-color: rgb(215, 161, 229);
+    color: #FFFFFF;
 }
 
 .violet {
-    background-color
-
-    : #7048E8;
-    color: white;
+    background-color: #7048E8;
+    color: #FFFFFF;
 }
 
 .violet-dark {
-    background-color
-
-    : rgb(53, 19, 155);
-    color: white;
+    background-color: rgb(53, 19, 155);
+    color: #FFFFFF;
 }
 
 .violet-medium {
-    background-color
-
-    : rgb(66, 24, 193);
-    color: white;
+    background-color: rgb(66, 24, 193);
+    color: #FFFFFF;
 }
 
 .violet-light {
-    background-color
-
-    : rgb(165, 139, 241);
-    color: white;
+    background-color: rgb(165, 139, 241);
+    color: #FFFFFF;
 }
 
 .violet-lighter {
-    background-color
-
-    : rgb(195, 178, 246);
-    color: white;
+    background-color: rgb(195, 178, 246);
+    color: #FFFFFF;
 }
 
 .indigo {
-    background-color
-
-    : #4263EB;
-    color: white;
+    background-color: #4263EB;
+    color: #FFFFFF;
 }
 
 .indigo-dark {
-    background-color
-
-    : rgb(16, 43, 153);
-    color: white;
+    background-color: rgb(16, 43, 153);
+    color: #FFFFFF;
 }
 
 .indigo-medium {
-    background-color
-
-    : rgb(20, 54, 192);
-    color: white;
+    background-color: rgb(20, 54, 192);
+    color: #FFFFFF;
 }
 
 .indigo-light {
-    background-color
-
-    : rgb(133, 156, 242);
-    color: white;
+    background-color: rgb(133, 156, 242);
+    color: #FFFFFF;
 }
 
 .indigo-lighter {
-    background-color
-
-    : rgb(173, 187, 247);
-    color: white;
+    background-color: rgb(173, 187, 247);
+    color: #FFFFFF;
 }
 
 .blue {
-    background-color
-
-    : #1C7CD6;
-    color: white;
+    background-color: #1C7CD6;
+    color: #FFFFFF;
 }
 
 .blue-dark {
-    background-color
-
-    : rgb(14, 60, 104);
-    color: white;
+    background-color: rgb(14, 60, 104);
+    color: #FFFFFF;
 }
 
 .blue-medium {
-    background-color
-
-    : rgb(19, 82, 142);
-    color: white;
+    background-color: rgb(19, 82, 142);
+    color: #FFFFFF;
 }
 
 .blue-light {
-    background-color
-
-    : rgb(90, 164, 234);
-    color: white;
+    background-color: rgb(90, 164, 234);
+    color: #FFFFFF;
 }
 
 .blue-lighter {
-    background-color
-
-    : rgb(128, 185, 239);
-    color: white;
+    background-color: rgb(128, 185, 239);
+    color: #FFFFFF;
 }
 
 .cyan {
-    background-color
-
-    : #1098AD;
-    color: white;
+    background-color: #1098AD;
+    color: #FFFFFF;
 }
 
 .cyan-dark {
-    background-color
-
-    : rgb(6, 60, 67);
-    color: white;
+    background-color: rgb(6, 60, 67);
+    color: #FFFFFF;
 }
 
 .cyan-medium {
-    background-color
-
-    : rgb(10, 94, 107);
-    color: white;
+    background-color: rgb(10, 94, 107);
+    color: #FFFFFF;
 }
 
 .cyan-light {
-    background-color
-
-    : rgb(55, 202, 224);
-    color: white;
+    background-color: rgb(55, 202, 224);
+    color: #FFFFFF;
 }
 
 .cyan-lighter {
-    background-color
-
-    : rgb(84, 218, 239);
-    color: white;
+    background-color: rgb(84, 218, 239);
+    color: #FFFFFF;
 }
 
 .teal {
-    background-color
-
-    : #0CA678;
-    color: white;
+    background-color: #0CA678;
+    color: #FFFFFF;
 }
 
 .teal-dark {
-    background-color
-
-    : rgb(4, 61, 44);
-    color: white;
+    background-color: rgb(4, 61, 44);
+    color: #FFFFFF;
 }
 
 .teal-medium {
-    background-color
-
-    : rgb(7, 101, 73);
-    color: white;
+    background-color: rgb(7, 101, 73);
+    color: #FFFFFF;
 }
 
 .teal-light {
-    background-color
-
-    : rgb(51, 221, 170);
-    color: white;
+    background-color: rgb(51, 221, 170);
+    color: #FFFFFF;
 }
 
 .teal-lighter {
-    background-color
-
-    : rgb(72, 242, 191);
-    color: white;
+    background-color: rgb(72, 242, 191);
+    color: #FFFFFF;
 }
 
 .green {
-    background-color
-
-    : #37B24D;
-    color: white;
+    background-color: #37B24D;
+    color: #FFFFFF;
 }
 
 .green-dark {
-    background-color
-
-    : rgb(26, 86, 37);
-    color: white;
+    background-color: rgb(26, 86, 37);
+    color: #FFFFFF;
 }
 
 .green-medium {
-    background-color
-
-    : rgb(37, 119, 52);
-    color: white;
+    background-color: rgb(37, 119, 52);
+    color: #FFFFFF;
 }
 
 .green-light {
-    background-color
-
-    : rgb(109, 210, 128);
-    color: white;
+    background-color: rgb(109, 210, 128);
+    color: #FFFFFF;
 }
 
 .green-lighter {
-    background-color
-
-    : rgb(142, 220, 156);
-    color: white;
+    background-color: rgb(142, 220, 156);
+    color: #FFFFFF;
 }
 
 .lime {
-    background-color
-
-    : #74B816;
-    color: white;
+    background-color: #74B816;
+    color: #FFFFFF;
 }
 
 .lime-dark {
-    background-color
-
-    : rgb(49, 77, 9);
-    color: white;
+    background-color: rgb(49, 77, 9);
+    color: #FFFFFF;
 }
 
 .lime-medium {
-    background-color
-
-    : rgb(74, 116, 14);
-    color: white;
+    background-color: rgb(74, 116, 14);
+    color: #FFFFFF;
 }
 
 .lime-light {
-    background-color
-
-    : rgb(161, 232, 61);
-    color: white;
+    background-color: rgb(161, 232, 61);
+    color: #FFFFFF;
 }
 
 .lime-lighter {
-    background-color
-
-    : rgb(179, 237, 99);
-    color: white;
+    background-color: rgb(179, 237, 99);
+    color: #FFFFFF;
 }
 
 .yellow {
-    background-color
-
-    : #EFA342;
-    color: white;
+    background-color: #EFA342;
+    color: #FFFFFF;
 }
 
 .yellow-dark {
-    background-color
-
-    : rgb(160, 96, 14);
-    color: white;
+    background-color: rgb(160, 96, 14);
+    color: #FFFFFF;
 }
 
 .yellow-medium {
-    background-color
-
-    : rgb(200, 121, 17);
-    color: white;
+    background-color: rgb(200, 121, 17);
+    color: #FFFFFF;
 }
 
 .yellow-light {
-    background-color
-
-    : rgb(245, 197, 135);
-    color: white;
+    background-color: rgb(245, 197, 135);
+    color: #FFFFFF;
 }
 
 .yellow-lighter {
-    background-color
-
-    : rgb(248, 217, 175);
-    color: white;
+    background-color: rgb(248, 217, 175);
+    color: #FFFFFF;
 }
 
 .orange {
-    background-color
-
-    : #F76707;
-    color: white;
+    background-color: #F76707;
+    color: #FFFFFF;
 }
 
 .orange-dark {
-    background-color
-
-    : rgb(126, 53, 4);
-    color: white;
+    background-color: rgb(126, 53, 4);
+    color: #FFFFFF;
 }
 
 .orange-medium {
-    background-color
-
-    : rgb(168, 71, 5);
-    color: white;
+    background-color: rgb(168, 71, 5);
+    color: #FFFFFF;
 }
 
 .orange-light {
-    background-color
-
-    : rgb(250, 152, 87);
-    color: white;
+    background-color: rgb(250, 152, 87);
+    color: #FFFFFF;
 }
 
 .orange-lighter {
-    background-color
-
-    : rgb(251, 178, 129);
-    color: white;
+    background-color: rgb(251, 178, 129);
+    color: #FFFFFF;
 }
 
 .get-started {
-    background-color
-
-    : #191C21;
+    background-color: #191C21;
 }
 
 .get-started__container {
@@ -1463,15 +1147,11 @@ pre:hover::after {
 }
 
 .get-started__title {
-    color
-
-    : #fff;
+    color: #FFFFFF;
 }
 
 .get-started__sub-title {
-    color
-
-    : rgb(174, 175, 179);
+    color: rgb(174, 175, 179);
 }
 
 .get-started__box-container {
@@ -1484,30 +1164,14 @@ pre:hover::after {
 @media screen and (min-width: 950px) {
 
     .get-started__box-container {
-        display
-
-    : -webkit-box;
-        display
-
-    : -ms-flexbox;
-        display
-
-    : flex;
-        max-width
-
-    : 40em;
-        -webkit-box-orient
-
-    : vertical;
-        -webkit-box-direction
-
-    : normal;
-            -ms-flex-direction
-
-    : column;
-                flex-direction
-
-    : column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 40em;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -1527,9 +1191,7 @@ pre:hover::after {
 }
 
 .get-started__box-title {
-    color
-
-    : #FDFDFD;
+    color: #FDFDFD;
 }
 
 .get-started pre.code,
@@ -1542,12 +1204,8 @@ pre:hover::after {
 
     .get-started pre.code,
     .get-started pre {
-        margin-left
-
-    : initial;
-        margin-right
-
-    : initial;
+        margin-left: initial;
+        margin-right: initial;
     }
 }
 
@@ -1558,9 +1216,7 @@ pre:hover::after {
 @media screen and (min-width: 675px) {
 
     .get-started pre.code code, .get-started pre code {
-        white-space
-
-    : inherit;
+        white-space: inherit;
     }
 }
 

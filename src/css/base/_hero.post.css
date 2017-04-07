@@ -33,6 +33,6 @@
         font-size: calc(50% + 1vw);
         font-weight: var(--fw-400);
         letter-spacing: 0.025em;
-        margin-bottom: 1.5rem
+        margin-bottom: 1.5rem;
     }
 }
