@@ -60,9 +60,9 @@
         @media (min-width: 675px) {
             padding: 1rem 0.5rem;
         }
+    }
 
-        + &__item {
-            margin-left: 5px;
-        }
+    &-item + &-item {
+        margin-left: 5px;
     }
 }

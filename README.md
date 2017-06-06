@@ -9,6 +9,7 @@ My objective is for **Timber** to be flexible, easily customized and extended on
 - [x] Uses Webpack 2
 - [x] ES2015
 - [x] Hot Module Reloading with BrowserSync & Webpack Dev Server
+- [x] Stylelint
 - [x] PostCSS (minimal plugins - targeting consistency with CSS4)
     - [autoprefixer](https://github.com/postcss/autoprefixer)
     - [cssano](http://cssnano.co/)
