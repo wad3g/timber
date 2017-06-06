@@ -1,6 +1,0 @@
-.vscode
-app/src
-dist
-node_modules
-webpack
-docs
