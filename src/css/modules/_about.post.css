@@ -1,5 +1,5 @@
 .about {
-    background-color: white;
+    background-color: #FFFFFF;
 
     &__container {
         max-width: 60em;
@@ -28,7 +28,7 @@
     &__box-container {
         display: block;
         max-width: 40em;
-        margin: 0 auto 1.5rem auto;
+        margin: 0 auto 1.5rem;
         padding: 1rem 0 0;
 
         @media screen and (min-width: 950px) {
@@ -43,16 +43,8 @@
         flex-direction: column;
         flex-basis: 400px;
 
-        &-title {
-
-        }
-
         &-content {
             margin-top: 0;
-        }
-
-        + &__box {
-            margin-top: 1.5rem;
         }
     }
 }

@@ -1,17 +1,18 @@
-var path = require('path')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './app.js',
+  entry: './src/app.js',
 
   devtool: 'source-map',
 
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, './docs/'),
-    publicPath: '../',
+    path: path.resolve(__dirname, 'docs')
   },
 
   module: {
@@ -31,7 +32,7 @@ module.exports = {
 
             'postcss-loader',
           ]
-      })
+        })
       },
       {
         test: /\.js/,
@@ -44,7 +45,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]',
+              name: './images/[name].[ext]',
             }
           }
         ]
@@ -53,20 +54,42 @@ module.exports = {
   },
 
   plugins: [
+
+    // copy static files to ./dist + needs work
+    new CopyWebpackPlugin([
+        {
+            context: 'src',
+            from: './images',
+            to: './images'
+        },
+        {
+            from: './static'
+        }
+    ]),
+
     // save bundle css as an external file
-    new ExtractTextPlugin('css/app.css'),
+    new ExtractTextPlugin('./css/app.css'),
+
+    new StyleLintPlugin({
+       configFile: 'stylelint.config.js',
+       context: 'src',
+       files: '**/*.css',
+       failOnError: false,
+       quiet: false,
+    }),
 
     // run the browsersync server
     new BrowserSyncPlugin({
-      server: {
-        baseDir: ['./docs/'],
-        index: 'index.html'
-      }
-  }),
+        host: 'localhost',
+        port: 4000,
+        proxy: 'http://localhost:8080/',
+        // prevent BrowserSync from reloading the page in favor of webpack-dev-server
+        reload: false
+    }),
 
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './index.html',
       filename: 'index.html',
-  }),
+    }),
   ],
 }

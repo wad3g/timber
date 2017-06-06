@@ -11,28 +11,28 @@ p {
 h1 {
     font-size: 3.998em;
     line-height: 1.2;
-    letter-spacing: -.1rem;
+    letter-spacing: -0.1rem;
 }
 
 h2 {
-    font-size: 2.827em;`
+    font-size: 2.827em;
     line-height: 1;
     letter-spacing: 0;
 }
 
 h3 {
-    font-size: 1.999em;`
+    font-size: 1.999em;
     letter-spacing: 0;
 }
 
 h4 {
-    font-size: 1.414em;`
+    font-size: 1.414em;
     line-height: 1;
-    letter-spacing: -.08rem;
+    letter-spacing: -0.08rem;
 }
 
 p {
-    line-height: 1.5;`
+    line-height: 1.5;
     letter-spacing: 0;
 
     + p {
@@ -47,9 +47,8 @@ p {
 [class*="__title"]:not(.hero__title) {
     font-weight: var(--fw-600);
     font-size: 3rem;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem;
     text-align: center;
-
 
     @media screen and (min-width: 675px) {
         font-size: 4rem;
@@ -59,12 +58,12 @@ p {
 [class*="__sub-title"]:not(.hero__sub-title) {
     font-size: 0.9rem;
     font-weight: 500;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 0.5rem 0 1.5rem;
     letter-spacing: 0;
     text-align: center;
 
     @media (min-width: 675px) {
-        font-size: 1rem;;
+        font-size: 1rem;
     }
 }
 
@@ -82,16 +81,15 @@ p {
     margin-bottom: 0.5rem;
 }
 
-
 code {
-        font-family: var(--ff-base-mono);
-  margin: 0 .2rem;
-  padding: 2px 8px 3px;
-  white-space: nowrap;
-  overflow-x: auto;
-  font-size: 0.9rem;
-  line-height: 1;
-  border-radius: 0;
+    font-family: var(--ff-base-mono);
+    margin: 0 0.2rem;
+    padding: 2px 8px 3px;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-radius: 0;
 }
 
 pre {
@@ -104,31 +102,30 @@ pre {
     border-left: 2px solid var(--accent-color-1);
     border-radius: 0;
     overflow-x: auto;
-    > code {
-      display: block;
-      white-space: pre;
-      margin: -15px 0 10px 20px;
-    padding: 0;
-    overflow-x: auto;
-    font-size: 0.9rem;
-    line-height: 2;
-    color: #6C7887;
-    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
-        display: block;
-  }
- }
 
- pre.code {
+    > code {
+        display: block;
+        white-space: pre;
+        margin: -15px 0 10px 20px;
+        padding: 0;
+        overflow-x: auto;
+        font-size: 0.9rem;
+        line-height: 2;
+        color: #6C7887;
+        font-family: var(--ff-system-mono);
+    }
+}
+
+pre.code {
     margin: 20px 25px;
     position: relative;
 }
 
-
- pre.code code {
-font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+pre.code code {
+    font-family: var(--ff-system-mono);
     display: block;
     margin: -15px 0 0 20px;
-    padding: 15px 0 15px;
+    padding: 15px 0;
     overflow-x: auto;
     font-size: 0.9rem;
     line-height: 2;
@@ -144,10 +141,9 @@ pre.code::after {
     right: 18px;
     top: 7px;
     font-size: 12px;
-    color: #444;
+    color: #444444;
     line-height: 20px;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
     transition: all 0.3s ease;
 }
 

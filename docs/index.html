@@ -1,28 +1,41 @@
 <!doctype html>
-
-<html lang=en=>
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Timber &mdash; A barebones boilerplate using PostCSS & Webpack2</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="app">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#6DD280">
-    <meta name="application-name" content="app">
+    <meta name="application-name" content="Timber">
+    <link rel="icon" sizes="192x192" href="./images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Timber">
+    <link rel="apple-touch-icon" href="./images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#191C21">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#191C21">
     <link rel="stylesheet" href="./css/app.css">
-<link href="../css/app.css" rel="stylesheet"></head>
+<link href="./css/app.css" rel="stylesheet"></head>
 
 <body>
         <header class="header">
             <nav class="header__nav nav">
                 <div class="nav-section">
                     <div class="nav-item">
-                        <a class="nav-brand" href="#">Timber</a>
+                        <a class="nav-brand" href="#"><img class="nav-image" src="./images/logo.svg" alt="Timber Logo"><span class="nav-text">Timber<span></a>
                     </div>
                 </div>
                 <div class="nav-section">
@@ -253,5 +266,5 @@ cd Timber</code></pre>
             </div>
             </div>
     </footer>
-<script type="text/javascript" src="../js/bundle.js"></script></body>
+<script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
