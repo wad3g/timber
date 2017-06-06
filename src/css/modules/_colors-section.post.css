@@ -6,8 +6,6 @@
         margin: 0 auto;
     }
 
-    &__title { }
-
     &__sub-title {
         color: var(--green-medium);
     }
@@ -31,8 +29,6 @@
         line-height: 2;
         max-width: 100%;
         margin: 0 auto;
-
-        &-content { }
     }
 
     &--code {
@@ -44,6 +40,10 @@
 
     &__color-maps {
         padding: 3rem 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100vw;
     }
 }
 
@@ -55,14 +55,8 @@
     min-height: 1px;
 
     &--color {
-        height: 2vw;
-        width: 2vw;
-        padding: 2rem;
-
-        @media (min-width: 675px) {
-            height: 5vw;
-            width: 5vw;
-        }
+        height: 20vw;
+        width: 20vw;
     }
 }
 

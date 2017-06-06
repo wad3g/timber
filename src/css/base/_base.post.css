@@ -3,14 +3,11 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
 }
-
 
 html {
     font-size: 16px;
 }
-
 
 body {
     line-height: 1.6;
@@ -18,7 +15,6 @@ body {
     color: var(--font-color);
     margin: 0;
 }
-
 
 hr {
     margin-top: 3rem;
@@ -32,7 +28,7 @@ a {
     cursor: pointer;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-    text-decoration-color: currentColor;;
+    text-decoration-color: currentColor;
     text-decoration-skip: ink;
 
     &:hover,
