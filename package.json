@@ -4,10 +4,10 @@
   "description": "Timber - A simple PostCSS boilerplate",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch",
+    "start": "webpack && npm run dev",
     "webpack": "webpack",
-    "build": "webpack -p --progress --colors",
-    "dev": "webpack -d --progress --colors --watch"
+    "dev": "webpack-dev-server --progress --colors --content-base docs/",
+    "build": "webpack -p --progress --colors"
   },
   "author": {
     "name": "Wade Garrett",
@@ -59,7 +59,9 @@
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.0",
     "style-loader": "^0.13.2",
+    "stylelint-config-standard": "^16.0.0",
     "stylelint-webpack-plugin": "^0.7.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

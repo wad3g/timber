@@ -32,7 +32,7 @@ module.exports = {
 
             'postcss-loader',
           ]
-      })
+        })
       },
       {
         test: /\.js/,
@@ -67,15 +67,16 @@ module.exports = {
 
     // run the browsersync server
     new BrowserSyncPlugin({
-      server: {
-        baseDir: ['./docs/'],
-        index: 'index.html'
-    },
-  }),
+        host: 'localhost',
+        port: 4000,
+        proxy: 'http://localhost:8080/',
+        // prevent BrowserSync from reloading the page in favor of webpack-dev-server
+        reload: false
+    }),
 
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
-  }),
+    }),
   ],
 }
