@@ -1,18 +1,18 @@
-var path = require('path')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-var StyleLintPlugin = require('stylelint-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './app.js',
+  entry: './src/app.js',
 
   devtool: 'source-map',
 
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, './docs/'),
-    publicPath: '../',
+    path: path.resolve(__dirname, 'docs')
   },
 
   module: {
@@ -45,7 +45,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]',
+              name: './images/[name].[ext]',
             }
           }
         ]
@@ -54,8 +54,21 @@ module.exports = {
   },
 
   plugins: [
+
+    // copy static files to ./dist + needs work
+    new CopyWebpackPlugin([
+        {
+            context: 'src',
+            from: './images',
+            to: './images'
+        },
+        {
+            from: './static'
+        }
+    ]),
+
     // save bundle css as an external file
-    new ExtractTextPlugin('css/app.css'),
+    new ExtractTextPlugin('./css/app.css'),
 
     new StyleLintPlugin({
        configFile: 'stylelint.config.js',
@@ -75,7 +88,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './index.html',
       filename: 'index.html',
     }),
   ],

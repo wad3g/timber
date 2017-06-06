@@ -23,7 +23,7 @@ hr {
     border-top: 1px solid var(--light-grey);
 }
 
-a {
+a:not(.nav-brand):not(.nav-link) {
     color: var(--accent-color-3);
     cursor: pointer;
     font-weight: 500;
