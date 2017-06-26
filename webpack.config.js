@@ -12,7 +12,7 @@ module.exports = {
 
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'build')
   },
 
   module: {
@@ -88,8 +88,53 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: 'index.html',
       filename: 'index.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/index.html',
+      filename: './docs/index.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/typography.html',
+      filename: './docs/typography.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/colors.html',
+      filename: './docs/colors.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/utilities.html',
+      filename: './docs/utilities.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/buttons.html',
+      filename: './docs/buttons.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/cards.html',
+      filename: './docs/cards.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/tables.html',
+      filename: './docs/tables.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/nav.html',
+      filename: './docs/nav.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/tooltips.html',
+      filename: './docs/tooltips.html',
     }),
   ],
 }
