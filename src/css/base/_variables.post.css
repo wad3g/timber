@@ -1,8 +1,21 @@
 :root {
+    --baseline: 2rem;
+    --base-fs: 22px;
+
     --ff-base: var(--ff-system);
     --ff-base-mono: var(--ff-system-mono);
     --ff-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --ff-system-mono: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+
+    --fs-xxs: calc(var(--fs) * 0.5);
+    --fs-xs: calc(var(--fs) * 0.75);
+    --fs-sm: calc(var(--fs) * 0.875);
+    --fs: var(--baseline);
+    --fs-md: calc(var(--fs) * 1.125);
+    --fs-lg: calc(var(--fs) * 1.25);
+    --fs-xl: calc(var(--fs) * 1.375);
+    --fs-xxl: calc(var(--fs) * 1.625);
+
     --fw-200: 200;
     --fw-300: 300;
     --fw-400: 400;
@@ -11,35 +24,53 @@
     --fw-700: 700;
     --fw-800: 800;
     --fw-900: 900;
-    --bp-larger-than-mobile: 400px;
-    --bp-larger-than-phablet: 550px;
-    --bp-larger-than-tablet: 750px;
-    --bp-larger-than-desktop: 1000px;
-    --bp-larger-than-desktophd: 1200px;
-    --container-width: 960px;
-    --container-width-larger-than-mobile: 85%;
-    --container-width-larger-than-phablet: 80%;
-    --total-columns: 12;
-    --column-width: calc(100% / var(--total-columns));
-    --column-margin: 4%;
-    --gutter: 10px;
+
+    --h1: 2rem;
+    --h2: 1.6rem;
+    --h3: 1.2rem;
+    --h4: 1rem;
+    --h5: 0.8rem;
+    --h6: 0.6rem;
+
+    --lh: var(--baseline);
+
     --global-radius: 4px;
-    --primary-color: var(--green-light);
-    --secondary-color: var(--blackish);
+    --default-color: var(--light-grey);
+    --primary-color: var(--indigo);
+    --secondary-color: var(--darker-grey);
     --accent-color-1: var(--indigo);
     --accent-color-2: var(--violet-dark);
     --accent-color-3: var(--red);
+    --success-color: var(--green);
+    --danger-color: var(--red);
+    --warning-color: var(--orange);
     --border-color: var(--gray);
     --text-color: var(--secondary-color);
     --link-color: var(--primary-color);
     --font-color: var(--darker-grey);
-    --btn-default-bg: var(--gray);
-    --btn-default-color: var(--white);
-    --btn-primary-bg: var(--primary-color);
-    --btn-primary-color: var(--blackish);
-    --btn-secondary-bg: var(--light-grey);
-    --btn-secondary-color: var(--blackish);
+    --btn-bg: transparent;
+    --btn-color: var(--blue);
+    --btn-default-color: var(--light-grey);
+    --btn-default-text: var(--darker-grey);
+    --btn-primary-color: var(--accent-color-1);
+    --btn-primary-text: var(--white);
+    --btn-success-color: var(--green);
+    --btn-success-text: var(--white);
+    --btn-danger-color: var(--red);
+    --btn-danger-text: var(--white);
+    --btn-warning-color: var(--orange);
+    --btn-warning-text: var(--white);
     --border-radius: 3px;
     --border-color: transparent;
     --border-color--focus: rgba(0, 0, 0, 0.125);
+}
+
+@media (min-width: 650px) {
+    --base-fs: 16px;
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.6rem;
+    --h4: 1.3rem;
+    --h5: 1rem;
+    --h6: 0.7rem;
 }

@@ -1,0 +1,288 @@
+@define-mixin moveDown $name: moveDown, $duration: 0.15s, $delay: var(--moveDown), $ease: forwards {
+    animation: $name $duration $delay $ease;
+}
+
+@define-mixin transition $property {
+    transition: $property 150ms ease-out 0s;
+}
+
+@define-mixin border $color {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color;
+}
+
+@define-mixin b-r $radius {
+    border-radius: $radius;
+}
+
+@define-mixin b-s {
+    box-shadow: 1px 1px 2px 0 color(var(--black) a(0.5));
+}
+
+@define-mixin input-focus $color {
+    box-shadow: inset 0 1px 1px color(var(--black) a(0.5)), 0 0 8px $color;
+    border-color: $color;
+}
+
+@define-mixin center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@define-mixin clearfix {
+
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@define-mixin m-h $padding {
+    margin-right: $padding;
+    margin-left: $padding;
+}
+
+@define-mixin m-v $padding {
+    margin-top: $padding;
+    margin-bottom: $padding;
+}
+
+@define-mixin p-h $padding {
+    padding-right: $padding;
+    padding-left: $padding;
+}
+
+@define-mixin p-v $padding {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@define-mixin size $size {
+    width: $size;
+    height: $size;
+}
+
+@define-mixin status $status, $color {
+
+    &.$status {
+        background-color: $color;
+    }
+}
+
+@define-mixin btn-variant $text-color, $background-color, $border-color: transparent {
+
+    & {
+        color: $text-color;
+        border-color: $border-color;
+        background-color: $background-color;
+    }
+
+    &:hover,
+    &.is-hover {
+        background-color: color($background-color lightness(-10%));
+        color: $text-color;
+        border-color: $border-color;
+    }
+
+    &:active,
+    &.is-active {
+        background-color: color($background-color lightness(-10%));
+        color: $text-color;
+        border-color: $border-color;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0s;
+    }
+
+    &:focus,
+    &.is-focus {
+        background-color: $background-color;
+        color: $text-color;
+        border-color: $border-color;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0s;
+    }
+
+    &[disabled],
+    &.is-disabled {
+        &,
+        &:hover,
+        &.is-hover,
+        &:active,
+        &.is-active {
+            background-color: color($background-color w(+5%));
+            border-color: $border-color;
+            color: $text-color;
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+    }
+
+    &.is-loading {
+        color: transparent;
+
+        &:after {
+            border-left-color: $text-color !important;
+            border-bottom-color: $text-color !important;
+        }
+
+        &:active,
+        &:hover {
+            color: transparent;
+        }
+    }
+}
+
+@define-mixin btn-outline-variant $inverse-text-color, $border-color {
+
+    & {
+        color: $border-color;
+        background-color: transparent;
+        border-color: $border-color;
+    }
+
+    &:active,
+    &.is-active {
+        color: $inverse-text-color;
+        background-color: $border-color;
+        border-color: $border-color;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0s;
+    }
+
+    &:focus,
+    &.is-focus {
+        border-color: $border-color;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0s;
+    }
+
+    &:hover,
+    &.is-hover {
+        color: $inverse-text-color;
+        background-color: $border-color;
+        border-color: $border-color;
+    }
+
+    &[disabled],
+    &.is-disabled,
+    fieldset[disabled] & {
+
+        &,
+        &:hover,
+        &.is-hover,
+        &:active,
+        &.is-active {
+            border-color: color($border-color w(+5%));
+            color: color($border-color w(+5%));
+            background-color: transparent;
+            cursor: not-allowed;
+        }
+    }
+
+    &.is-loading {
+        color: transparent;
+        background-color: transparent;
+
+        &:after {
+            border-left-color: $border-color !important;
+            border-bottom-color: $border-color !important;
+        }
+
+        &:active,
+        &:hover {
+            color: transparent;
+            background-color: transparent;
+        }
+    }
+}
+
+@define-mixin btn-gradient-variant $text-color, $background-color, $border-color: transparent {
+
+    & {
+        color: $text-color;
+        border-color: transparent;
+        background-image: linear-gradient(to right, $background-color, color($background-color lightness(-5%) saturation(+30%) hue(-10)));
+    }
+
+    &:hover,
+    &.is-hover {
+        background-position: right center;
+    }
+
+    &:active,
+    &.is-active {
+        background-color: color($background-color lightness(-10%));
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0s;
+    }
+
+    &:focus,
+    &.is-focus {
+        background-color: $background-color;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0s;
+    }
+
+    &[disabled],
+    &.is-disabled {
+        &,
+        &:hover,
+        &.is-hover,
+        &:active,
+        &.is-active {
+            background-image: linear-gradient(to right, color($background-color w(+5%)) 0%, color($background-color lightness(-10%) w(+5%)) 51%, color($background-color lightness(-25%) w(+5%)));
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+    }
+
+    &.is-loading {
+        color: transparent;
+
+        &:after {
+            border-left-color: $text-color !important;
+            border-bottom-color: $text-color !important;
+        }
+
+        &:active,
+        &:hover {
+            color: transparent;
+        }
+    }
+}
+
+@define-mixin card-outline-variant $inverse-text-color, $border-color {
+
+    & {
+        color: $border-color;
+        background-color: transparent;
+        border: 2px solid $border-color;
+        border-radius: var(--global-radius);
+    }
+}
+
+@define-mixin card-gradient-variant $text-color, $background-color, $border-color: transparent {
+
+    & {
+        color: $text-color;
+        border-color: transparent;
+        background-image: linear-gradient(-120deg, $background-color, color($background-color lightness(-15%) saturation(+40%) hue(-15)));
+    }
+}
+
+
+@define-mixin card-variant $text-color, $color {
+
+    & {
+        color: $text-color;
+        border-color: $color;
+        background-color: $color;
+    }
+}
