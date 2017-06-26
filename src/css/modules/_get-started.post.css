@@ -1,62 +1,7 @@
 .get-started {
     background-color: var(--secondary-color);
 
-    &__container {
-        max-width: 45em;
-        margin: 0 auto;
-    }
-
-    &__title {
+    & > * {
         color: var(--white);
-    }
-
-    &__sub-title {
-        color: var(--grey-lighter);
-    }
-
-    &__box-container {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 1rem 0 0;
-
-        @media screen and (min-width: 950px) {
-            display: flex;
-            max-width: 40em;
-            flex-direction: column;
-        }
-    }
-
-    &__box {
-        display: flex;
-        flex-direction: column;
-        line-height: 2;
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 0.025rem;
-        padding: 1.5rem 0;
-
-        &-title {
-            color: var(--offwhite);
-        }
-    }
-
-    pre.code,
-    pre {
-        margin-left: 0;
-        margin-right: 0;
-
-        @media screen and (min-width: 675px) {
-            margin-left: initial;
-            margin-right: initial;
-        }
-
-        code {
-            white-space: pre-line;
-
-            @media screen and (min-width: 675px) {
-                white-space: inherit;
-            }
-        }
     }
 }

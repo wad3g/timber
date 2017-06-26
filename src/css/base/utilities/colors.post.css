@@ -1,0 +1,28 @@
+:root {
+    --default-color: var(--light-grey);
+    --primary-color: var(--green-light);
+    --accent-color-1: var(--indigo);
+    --accent-color-2: var(--violet-dark);
+    --accent-color-3: var(--red);
+    --success-color: var(--green);
+    --danger-color: var(--red);
+    --warning-color: var(--orange);
+    --border-color: var(--gray);
+    --text-color: var(--secondary-color);
+    --link-color: var(--primary-color);
+    --font-color: var(--darker-grey);
+    --btn-bg: transparent;
+    --btn-color: var(--blue);
+    --btn-default-color: var(--light-grey);
+    --btn-default-text: var(--darker-grey);
+    --btn-primary-color: var(--accent-color-1);
+    --btn-primary-text: var(--white);
+    --btn-success-color: var(--green);
+    --btn-success-text: var(--white);
+    --btn-danger-color: var(--red);
+    --btn-danger-text: var(--white);
+    --btn-warning-color: var(--orange);
+    --btn-warning-text: var(--white);
+    --border-color: transparent;
+    --border-color--focus: rgba(0, 0, 0, 0.125);
+}

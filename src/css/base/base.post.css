@@ -1,26 +1,33 @@
 * {
-    box-sizing: border-box;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-    font-size: 16px;
+    font-size: var(--base-fs);
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
-    line-height: 1.6;
+    line-height: var(--baseline);
     font-family: var(--ff-base);
+    word-wrap: break-word;
     color: var(--font-color);
+    display: flex;
     margin: 0;
-}
-
-hr {
-    margin-top: 3rem;
-    margin-bottom: 3.5rem;
-    border-width: 0;
-    border-top: 1px solid var(--light-grey);
+    flex-flow: column;
 }
 
 a:not(.nav-brand):not(.nav-link) {

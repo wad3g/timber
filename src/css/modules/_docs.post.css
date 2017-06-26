@@ -1,0 +1,111 @@
+.app-aside {
+    pre > code {
+        white-space: pre;
+    }
+
+    section {
+        justify-content: start;
+        padding: 2rem 1rem;
+
+        @media (min-width: 650px) {
+            padding: inherit;
+        }
+    }
+
+    .title-group {
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .container-aside {
+        max-width: 45em;
+    }
+
+    .content-aside {
+        max-width: 40em;
+    }
+
+    .colors {
+        &__color-maps {
+            width: auto;
+        }
+    }
+
+    .column {
+        flex: inherit;
+
+        &--color {
+            width: 10vw;
+            height: 10vw;
+
+            &-span {
+                font-family: monospace;
+                font-weight: 600;
+                font-size: 0.9rem;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                text-align: center;
+            }
+
+            &:nth-child(n+1) {
+                color: color(var(--violet) lightness(95%));
+            }
+
+            &:nth-child(n+2) {
+                color: color(var(--violet) lightness(100%));
+            }
+
+            &:nth-child(n+3) {
+                color: var(--white);
+            }
+
+            &:nth-child(n+4) {
+                color: color(var(--violet) lightness(-80%));
+            }
+
+            &:nth-child(n+5) {
+                color: color(var(--violet) lightness(-40%));
+            }
+        }
+    }
+}
+
+.docs {
+    &-title,
+    &-subtitle {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    &-title {
+        letter-spacing: 0;
+        font-size: 2.6rem;
+    }
+
+    &-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        font-weight: 500;
+        color: var(--grey-medium);
+    }
+
+    &-heading {
+        margin-top: 2rem;
+
+        &-example {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &-container {
+        width: auto;
+
+        @media (min-width: 650px) {
+            width: 100%;
+        }
+    }
+}

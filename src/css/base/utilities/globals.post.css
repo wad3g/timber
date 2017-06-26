@@ -1,0 +1,15 @@
+:root {
+    --baseline: 2rem;
+    --base-fs: 22px;
+
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.6rem;
+    --h4: 1.3rem;
+    --h5: 1rem;
+
+    --lh: var(--baseline);
+
+    --global-radius: 4px;
+    --border-radius: 3px;
+}

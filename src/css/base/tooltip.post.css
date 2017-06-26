@@ -1,0 +1,110 @@
+[data-tooltip] {
+    position: relative;
+
+    &:before,
+    &:after {
+        bottom: 100%;
+        left: 50%;
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+        margin-bottom: 10px;
+        pointer-events: none;
+        transition: all 0.18s ease-in 0.18s;
+        transform: translate(-50%, 10px);
+        transform-origin: top;
+    }
+
+    &:after {
+        background: color(var(--blackish) a(0.7));
+        border-radius: 3px;
+        color: #FFFFFF;
+        content: attr(data-tooltip);
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
+        overflow: hidden;
+        pointer-events: none;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &:before {
+        content: "";
+    }
+
+    &:hover,
+    &[data-tooltip-visible] {
+
+        &:before,
+        &:after {
+            opacity: 1;
+            pointer-events: auto;
+            transition: all 0.18s ease-in 0.18s;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+
+[data-tooltip-pos="down"] {
+
+    &:before,
+    &:after {
+        bottom: auto;
+        left: 50%;
+        top: 100%;
+        margin-top: 10px;
+        transform: translate(-50%, -10px);
+    }
+
+    &:hover,
+    &[data-tooltip-visible] {
+
+        &:before,
+        &:after {
+            transform: translate(-50%, 0);
+        }
+    }
+}
+
+[data-tooltip-pos="left"] {
+
+    &:before,
+    &:after {
+        bottom: auto;
+        left: auto;
+        right: 100%;
+        top: 50%;
+        transform: translate(10px, -50%);
+        margin-right: 10px;
+    }
+
+    &:hover,
+    &[data-tooltip-visible] {
+
+        &:before,
+        &:after {
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+[data-tooltip-pos="right"] {
+
+    &:before,
+    &:after {
+        bottom: auto;
+        left: 100%;
+        top: 50%;
+        margin-left: 10px;
+        transform: translate(-10px, -50%);
+    }
+
+    &:hover,
+    &[data-tooltip-visible] {
+
+        &:before,
+        &:after {
+            transform: translate(0, -50%);
+        }
+    }
+}

@@ -3,10 +3,6 @@
     align-items: center;
     background-color: var(--secondary-color);
 
-    @media screen and (min-width: 675px) {
-        padding: 0 1rem;
-    }
-
     &__nav {
         flex-wrap: wrap;
     }

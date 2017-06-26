@@ -1,0 +1,45 @@
+.app,
+.app-aside,
+.nav-aside,
+.main-aside {
+    display: block;
+
+    @media (min-width: 900px) {
+        margin: 0;
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+    }
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    @media screen and (min-width: 675px) {
+        max-width: 60em;
+        width: 60em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.box {
+    border-radius: 5px;
+
+    /*
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    */
+
+    display: block;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+}

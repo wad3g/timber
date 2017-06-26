@@ -1,45 +1,9 @@
 .colors {
-    background-color: var(--light-grey);
-
-    &__container {
-        max-width: 60em;
-        margin: 0 auto;
-    }
-
-    &__sub-title {
-        color: var(--green-medium);
-    }
-
-    &__box-container {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 1rem 0 0;
-
-        @media screen and (min-width: 950px) {
-            display: flex;
-            max-width: 40em;
-            justify-content: center;
-        }
-    }
-
-    &__box {
-        display: flex;
-        flex-direction: column;
-        line-height: 2;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    &--code {
-        color: var(--blackish);
-        white-space: pre-line;
-        line-height: 2;
-        display: flex;
-    }
+    background-color: var(--white);
+    padding-bottom: 0;
 
     &__color-maps {
-        padding: 3rem 0;
+        padding: 3rem 0 0;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);

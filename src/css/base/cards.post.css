@@ -1,0 +1,122 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 1rem 0;
+
+    @media (min-width: 675px) {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 675px) {
+
+    .cards > .card {
+        flex: auto;
+    }
+}
+
+.card {
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.6rem;
+    max-width: 95%;
+
+    @media (min-width: 675px) {
+        flex: 0 1 calc(50% - 6.5vw);
+        padding: 1rem 1.6rem;
+        max-width: 600px;
+    }
+
+    &-header {
+        font-weight: 600;
+        margin: 0;
+    }
+
+    &-body {
+        min-height: 100px;
+    }
+
+    &-footer {
+        display: flex;
+        align-items: stretch;
+        border-top: 1px solid #DBDBDB;
+        flex: 1;
+
+        &-item:not(:first-child) {
+            border-left: 1px solid #DBDBDB;
+            display: flex;
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 1rem;
+        }
+    }
+
+    &--default {
+        @mixin card-variant var(--text-color), var(--default-color);
+
+        &.card--outline {
+            @mixin card-outline-variant var(--white), var(--btn-default-text);
+        }
+
+        &.card--gradient {
+            @mixin card-gradient-variant var(--btn-default-text), var(--btn-default-color);
+        }
+    }
+
+    &--primary {
+        @mixin card-variant var(--white), var(--primary-color);
+
+        &.card--outline {
+            @mixin card-outline-variant var(--white), var(--btn-primary-color);
+        }
+
+        &.card--gradient {
+            @mixin card-gradient-variant var(--white), var(--btn-primary-color);
+        }
+    }
+
+    &--success {
+        @mixin card-variant var(--white), var(--success-color);
+
+        &.card--outline {
+            @mixin card-outline-variant var(--white), var(--btn-success-color);
+        }
+
+        &.card--gradient {
+            @mixin card-gradient-variant var(--white), var(--btn-success-color);
+        }
+    }
+
+    &--danger {
+        @mixin card-variant var(--white), var(--danger-color);
+
+        &.card--outline {
+            @mixin card-outline-variant var(--white), var(--btn-danger-color);
+        }
+
+        &.card--gradient {
+            @mixin card-gradient-variant var(--white), var(--btn-danger-color);
+        }
+    }
+
+    &--warning {
+        @mixin card-variant var(--white), var(--warning-color);
+
+        &.card--outline {
+            @mixin card-outline-variant var(--white), var(--btn-warning-color);
+        }
+
+        &.card--gradient {
+            @mixin card-gradient-variant var(--white), var(--btn-warning-color);
+        }
+    }
+}

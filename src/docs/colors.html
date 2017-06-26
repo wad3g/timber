@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" class="docs">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Timber &mdash; A web starter app with PostCSS &amp; Webpack 2</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Timber">
+    <link rel="icon" sizes="192x192" href="../images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Timber">
+    <link rel="apple-touch-icon" href="../images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#191C21">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#191C21">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="app-aside">
+    <div class="nav-aside">
+        <nav class="nav">
+            <div class="nav-section nav-aside-header">
+                <div class="nav-aside-item">
+                    <a class="nav-brand" href="index.html"><img class="nav-image" src="../images/logo.svg" alt="Timber Logo"><span class="nav-text">Timber<span></a>
+                </div>
+            </div>
+            <input type="checkbox" id="navbar" class="navbar"><div class="nav-section nav-aside-section">
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="index.html">Overview</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="typography.html">Typography</a>
+                </div>
+                <div class="nav-item nav-aside-item is-active">
+                    <a class="nav-link nav-aside-link" href="colors.html">Colors</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="utilities.html">Utilities</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="buttons.html">Buttons</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="cards.html">Cards</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="tables.html">Tables</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="nav.html">Nav</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="tooltips.html">Tooltips</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="https://github.com/wad3g/Timber/archive/master.zip" rel="noopener">Download</a>
+                </div>
+                <div class="nav-item nav-aside-item">
+                    <a class="nav-link nav-aside-link" href="https://github.com/wad3g/timber">GitHub</a>
+                </div>
+            </div>
+            <footer class="footer nav-aside-footer">
+                <nav class="nav">
+                    <div class="nav-section">
+                        <div class="nav-item">
+                            <a class="nav-link" href="https://github.com/wad3g/timber/archive/master.zip" rel="noopener"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="https://github.com/wad3g/timber" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i>
+</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/wad3g" rel="noopener"><i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
+        <label for="navbar" class="nav-handle">Menu</label></nav>
+</div>
+
+<div class="main-aside">
+    <section class="docs-container intro">
+        <div class="container-aside">
+            <div class="title-group">
+                <h1 class="docs-title">Colors</h1>
+                <p class="docs-subtitle">SASS-like colormapping with PostCSS</p>
+            </div>
+        </div>
+        <div class="container-aside">
+<p class="content-aside">Easily generate accessible color maps for <em>any</em> color, instantly. By using the primary color swatches from <a class="colors__box-content-link" href="https://yeun.github.io/open-color/" rel="noopener">Open Color</a> and 3 color-adjuster's
+                from the <a class="colors__box-content-link" href="https://github.com/postcss/postcss-color-function" rel="noopener">postcss-color-function</a> plugin.
+
+                <h6 class="docs-heading-example">Example</h6>
+                <code class="colors--code">
+/* Violet */
+--violet: #7048E8;
+--violet-lighter: color(var(--violet) lightness(+20%) tint(15%));
+--violet-light: color(var(--violet) lightness(+10%) tint(15%));
+--violet-medium: color(var(--violet) lightness(-10%) shade(15%));
+--violet-dark: color(var(--violet) lightness(-20%) shade(15%));
+
+</code>
+
+            <div class="row">
+                <div class="column column--color violet-dark">
+                    <span class="column--color-span">violet<br /> dark</span>
+                </div>
+                <div class="column column--color violet-medium">
+                    <span class="column--color-span">violet<br /> medium</span>
+                </div>
+                <div class="column column--color violet">
+                    <span class="column--color-span">violet</span>
+                </div>
+                <div class="column column--color violet-light">
+                    <span class="column--color-span">violet<br /> light</span>
+                </div>
+                <div class="column column--color violet-lighter">
+                    <span class="column--color-span">violet<br /> lighter</span>
+                </div>
+            </div>
+            </p>
+        </div>
+        <div class="colors__color-maps">
+            <div class="row">
+                <div class="column column--color grey-dark"></div>
+                <div class="column column--color grey-medium"></div>
+                <div class="column column--color grey">
+                    <span class="column--color-span">#6C6D73 <br />
+                        --grey</span>
+                </div>
+                <div class="column column--color grey-light"></div>
+                <div class="column column--color grey-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color red-dark"></div>
+                <div class="column column--color red-medium"></div>
+                <div class="column column--color red">
+                    <span class="column--color-span">#DE4E47 <br />
+                        --red</span>
+                </div>
+                <div class="column column--color red-light"></div>
+                <div class="column column--color red-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color purple-dark"></div>
+                <div class="column column--color purple-medium"></div>
+                <div class="column column--color purple">
+                    <span class="column--color-span">#A04BC2 <br />
+                        --purple</span>
+                </div>
+                <div class="column column--color purple-light"></div>
+                <div class="column column--color purple-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color violet-dark"></div>
+                <div class="column column--color violet-medium"></div>
+                <div class="column column--color violet">
+                    <span class="column--color-span">#6850E0 <br />
+                        --violet</span>
+                </div>
+                <div class="column column--color violet-light"></div>
+                <div class="column column--color violet-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color indigo-dark"></div>
+                <div class="column column--color indigo-medium"></div>
+                <div class="column column--color indigo">
+                    <span class="column--color-span">#4667E3 <br />
+                        --indigo</span>
+                </div>
+                <div class="column column--color indigo-light"></div>
+                <div class="column column--color indigo-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color blue-dark"></div>
+                <div class="column column--color blue-medium"></div>
+                <div class="column column--color blue">
+                    <span class="column--color-span">#387CCF <br />
+                        --blue</span>
+                </div>
+                <div class="column column--color blue-light"></div>
+                <div class="column column--color blue-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color cyan-dark"></div>
+                <div class="column column--color cyan-medium"></div>
+                <div class="column column--color cyan">
+                    <span class="column--color-span">#4496AA <br />
+                        --cyan</span>
+                </div>
+                <div class="column column--color cyan-light"></div>
+                <div class="column column--color cyan-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color green-dark"></div>
+                <div class="column column--color green-medium"></div>
+                <div class="column column--color green">
+                    <span class="column--color-span">#5EAE5A <br />
+                        --green</span>
+                </div>
+                <div class="column column--color green-light"></div>
+                <div class="column column--color green-lighter"></div>
+            </div>
+            <div class="row">
+                <div class="column column--color lime-dark"></div>
+                <div class="column column--color lime-medium"></div>
+                <div class="column column--color lime">
+                    <span class="column--color-span">#84B53C <br />
+                        --lime</span>
+                </div>
+                <div class="column column--color lime-light"></div>
+                <div class="column column--color lime-lighter"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column--color yellow-dark"></div>
+                <div class="column column--color yellow-medium"></div>
+                <div class="column column--color yellow">
+                    <span class="column--color-span">#E5A555 <br />
+                        --yellow</span>
+                </div>
+                <div class="column column--color yellow-light"></div>
+                <div class="column column--color yellow-lighter"></div>
+            </div>
+            <div class="row">
+                <div class="column column--color orange-dark"></div>
+                <div class="column column--color orange-medium"></div>
+                <div class="column column--color orange">
+                    <span class="column--color-span">#E76F2F <br />
+                        --orange</span>
+                </div>
+                <div class="column column--color orange-light"></div>
+                <div class="column column--color orange-lighter"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="https://use.fontawesome.com/ab4ce91478.js"></script></body>
+
+</html>
