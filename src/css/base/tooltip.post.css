@@ -108,3 +108,180 @@
         }
     }
 }
+
+.tag {
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    color: #4a4a4a;
+    font-weight: var(--fw-600);
+    display: inline-flex;
+    font-size: 0.8rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: 0.875em;
+    padding-right: 0.875em;
+    white-space: nowrap;
+}
+
+.step {
+    display: flex;
+    flex-flow: row;
+
+    &-progress {
+        display: flex;
+        max-width: 320px;
+    }
+
+    &-bullet-wrapper {
+        display: flex;
+        justify-content: space-between;
+        counter-reset: step-num;
+
+        & > span {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    &-bullet,
+    &-bullet-connector {
+        display: inline-flex;
+    }
+
+    &-bullet {
+        @mixin size 0.6rem;
+
+        font-size: 0;
+        line-height: 0;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        padding: 0;
+        border: 0;
+        counter-increment: step-num;
+        background-color: #D8DDE6;
+        border: 0.2rem solid #D8DDE6;
+
+        &:before {
+            counter-increment: step-num + 1;
+            content: counter(step-num);
+            width: 100%;
+        }
+
+        &.is-active {
+            font-size: 0;
+            background-color: var(--indigo-light);
+            border: 0.2rem solid var(--primary-color);
+            color: var(--white);
+        }
+
+        &.is-done {
+            @mixin size 1rem;
+
+            border: 0;
+            font-size: 0;
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        &-item {
+            @mixin size 1rem;
+
+            position: relative;
+            border-radius: 50%;
+            background: #d8dde6;
+            border: 4px solid white;
+            vertical-align: middle;
+            margin-bottom: 2px;
+
+            + .step-bullet-connector--sm {
+
+                &:nth-child(-n+6) {
+                    display: flex;
+                    margin-bottom: 0.075rem;
+                    width: 8rem;
+                    min-width: 8rem;
+                    height: 0.1rem;
+                    background-color: var(--primary-color);
+
+                    &:not(.is-done) {
+                        background-color: color(var(--grey-lighter) a(0.35));
+                        height: 0.1rem;
+                    }
+                }
+            }
+
+            &:not(.is-active) {
+                @mixin size 0.5rem;
+            }
+
+            &.is-active {
+                border: 4px solid white;
+                background-color: var(--primary-color);
+
+                .step-bullet--sm {
+                    @mixin size 0.25rem;
+
+                    border-radius: 50%;
+                    display: flex;
+                    background-color: var(--white);
+                    border: 0.125rem solid var(--white);
+                    margin-bottom: 0;
+                    margin-top: 0.25rem;
+                    margin-left: 0.25rem;
+                }
+            }
+
+            &.is-done {
+                @mixin size 0.5rem;
+
+                background-color: var(--primary-color);
+                border-color: var(--white);
+                margin-bottom: 2px;
+
+                + .step-bullet-connector--sm {
+
+                    &:nth-child(-n+6) {
+                        display: flex;
+                        margin-bottom: 0.075rem;
+                        width: 8rem;
+                        min-width: 8rem;
+                        height: 0.1rem;
+                        background-color: var(--primary-color);
+
+                        &:not(.is-done) {
+                            background-color: color(var(--grey-lighter) a(0.35));
+                            height: 0.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-bullet-connector {
+
+        &:nth-child(-n+6) {
+            display: flex;
+            margin-bottom: 0.05rem;
+            width: 4rem;
+            min-width: 4rem;
+            height: 0.2rem;
+            background-color: var(--primary-color);
+
+            &:not(.is-done) {
+                background-color: color(var(--grey-lighter) a(0.35));
+                height: 0.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 675px) {
+    &-bullet-connector:nth-child(-n+6) {
+        @mixin size 8px;
+    }
+}
