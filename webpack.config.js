@@ -136,5 +136,10 @@ module.exports = {
       template: './src/docs/tooltips.html',
       filename: './docs/tooltips.html',
     }),
+
+    new HtmlWebpackPlugin({
+      template: './src/docs/plank.html',
+      filename: './docs/plank.html',
+    }),
   ],
 }

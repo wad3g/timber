@@ -59,6 +59,8 @@
     "postcss-media-variables": "^2.0.0",
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.0",
+    "postcss-reporter": "^4.0.0",
+    "postcss-wcag-contrast": "^2.0.0",
     "style-loader": "^0.13.2",
     "stylelint-config-standard": "^16.0.0",
     "stylelint-webpack-plugin": "^0.7.0",
