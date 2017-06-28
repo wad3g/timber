@@ -6,12 +6,12 @@
     margin-bottom: 0;
     padding: 1rem 0;
 
-    @media (min-width: 675px) {
+    @media (min-width: 900px) {
         margin-bottom: 2rem;
     }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 900px) {
 
     .cards > .card {
         flex: auto;
@@ -26,7 +26,7 @@
     margin-bottom: 1.6rem;
     max-width: 95%;
 
-    @media (min-width: 675px) {
+    @media (min-width: 900px) {
         flex: 0 1 calc(50% - 6.5vw);
         padding: 1rem 1.6rem;
         max-width: 600px;

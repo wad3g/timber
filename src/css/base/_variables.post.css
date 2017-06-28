@@ -1,6 +1,6 @@
 :root {
-    --baseline: 2rem;
-    --base-fs: 22px;
+    --baseline: 1.8rem;
+    --base-fs: 20px;
 
     --ff-base: var(--ff-system);
     --ff-base-mono: var(--ff-system-mono);

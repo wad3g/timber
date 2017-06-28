@@ -286,3 +286,33 @@
         background-color: $color;
     }
 }
+
+@define-mixin plank-variant $text-color, $color {
+
+    & {
+        color: $text-color;
+        border-color: $color;
+        background-color: $color;
+    }
+}
+
+@define-mixin plank-outline-variant $inverse-text-color, $border-color {
+
+    & {
+        color: $border-color;
+        background-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top: 4px solid color($border-color a(0.1));
+        border-bottom: 4px solid color($border-color a(0.1));
+    }
+}
+
+@define-mixin plank-gradient-variant $text-color, $background-color, $border-color: transparent {
+
+    & {
+        color: $text-color;
+        border-color: transparent;
+        background-image: linear-gradient(-120deg, $background-color, color($background-color lightness(-15%) saturation(+40%) hue(-15)));
+    }
+}

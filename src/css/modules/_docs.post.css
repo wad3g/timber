@@ -7,7 +7,7 @@
         justify-content: start;
         padding: 2rem 1rem;
 
-        @media (min-width: 650px) {
+        @media (min-width: 900px) {
             padding: inherit;
         }
     }
@@ -104,8 +104,18 @@
     &-container {
         width: auto;
 
-        @media (min-width: 650px) {
+        @media (min-width: 900px) {
             width: 100%;
         }
+    }
+
+    .tooltips {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .step {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }

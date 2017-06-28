@@ -117,8 +117,6 @@ blockquote {
 }
 
 pre {
-    background: #1F2227;
-    border-left: 0.4rem solid var(--accent-color-1);
     overflow-y: hidden;
     margin-bottom: 2.5rem;
     margin-left: 0;
@@ -131,32 +129,26 @@ pre {
 }
 
 pre > code {
-    background-color: #202227;
-    border-radius: 0;
+    background-color: var(--whitesmoke);
+    border-radius: 0.2rem;
+    padding: 0.6rem 0.8rem;
     display: block;
-    padding: 1rem;
     white-space: pre-line;
-    color: var(--grey-lighter);
-    font-family: var(--ff-system-mono);
-
-    @media screen and (min-width: 675px) {
-        padding: 1rem 1.5rem;
-    }
+    color: var(--pink);
+    max-width: 40em;
 }
 
 code {
-    background: transparent;
-    border-radius: 0.4rem;
-    font-family: var(--ff-base-mono);
-    font-size: 68%;
+    font-size: 87.5%;
+    font-family: code, monospace;
+    line-height: 1.25;
+    background: var(--whitesmoke);
+    border-radius: 0.2rem;
     margin: 0 0.2rem;
-    padding: 0.2rem 0.6rem;
-    white-space: pre-line;
-    color: var(--violet-dark);
-
-    @media screen and (min-width: 675px) {
-        font-size: 86%;
-    }
+    padding: 0.3rem 0.4rem;
+    white-space: nowrap;
+    color: var(--pink);
+    vertical-align: baseline;
 }
 
 hr {

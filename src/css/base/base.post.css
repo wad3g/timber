@@ -5,11 +5,18 @@
 }
 
 html {
+    /*
     font-size: var(--base-fs);
+    font-size: 112.5%;
+*/
+    font-size: 20px;
     box-sizing: border-box;
     height: 100%;
     margin: 0;
     text-rendering: optimizeLegibility;
+    overflow: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 html,
@@ -28,6 +35,7 @@ body {
     display: flex;
     margin: 0;
     flex-flow: column;
+    font-size: 1rem;
 }
 
 a:not(.nav-brand):not(.nav-link) {

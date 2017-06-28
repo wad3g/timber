@@ -14,14 +14,13 @@
 }
 
 .container {
-    max-width: 100%;
-    width: 100%;
+    position: relative;
     margin-left: 0;
     margin-right: 0;
 
     @media screen and (min-width: 675px) {
-        max-width: 60em;
-        width: 60em;
+        max-width: calc(60rem - 40px);
+        width: calc(60rem - 40px);
         margin-left: auto;
         margin-right: auto;
     }

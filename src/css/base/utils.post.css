@@ -27,3 +27,9 @@
         display: none;
     }
 }
+
+.fa {
+    font-size: 21px;
+    text-align: center;
+    vertical-align: top;
+}
