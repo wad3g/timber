@@ -13,17 +13,8 @@
     }
 }
 
-.container {
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
-
-    @media screen and (min-width: 675px) {
-        max-width: calc(60rem - 40px);
-        width: calc(60rem - 40px);
-        margin-left: auto;
-        margin-right: auto;
-    }
+.main-aside {
+    margin-left: 20vh;
 }
 
 .box {

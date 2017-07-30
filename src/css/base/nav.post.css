@@ -187,7 +187,8 @@
         height: 100vh;
         overflow-x: hidden;
         overflow-y: scroll;
-        padding: 2.5vh 5vw;
+        margin: 0 auto;
+        width: 100%;
 
         &.app-aside-container,
         & section {

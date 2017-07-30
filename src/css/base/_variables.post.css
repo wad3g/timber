@@ -1,5 +1,5 @@
 :root {
-    --baseline: 1.8rem;
+    --baseline: 1.6rem;
     --base-fs: 20px;
 
     --ff-base: var(--ff-system);
@@ -35,8 +35,11 @@
     --lh: var(--baseline);
 
     --global-radius: 4px;
-    --default-color: var(--light-grey);
-    --primary-color: var(--indigo);
+    --default-color: var(--grey-lighter);
+    --primary-light: var(--purple-lighter);
+    --primary-light: var(--purple-light);
+    --primary-color: var(--purple);
+    --primary-dark: var(--purple-dark);
     --secondary-color: var(--darker-grey);
     --accent-color-1: var(--indigo);
     --accent-color-2: var(--violet-dark);
@@ -45,14 +48,14 @@
     --danger-color: var(--red);
     --warning-color: var(--orange);
     --border-color: var(--gray);
-    --text-color: var(--secondary-color);
+    --text-color: var(--blackish);
     --link-color: var(--primary-color);
-    --font-color: var(--darker-grey);
+    --font-color: var(--blackish);
     --btn-bg: transparent;
     --btn-color: var(--blue);
-    --btn-default-color: var(--light-grey);
-    --btn-default-text: var(--darker-grey);
-    --btn-primary-color: var(--accent-color-1);
+    --btn-default-color: var(--grey-lighter);
+    --btn-default-text: var(--blackish);
+    --btn-primary-color: var(--primary-color);
     --btn-primary-text: var(--white);
     --btn-success-color: var(--green);
     --btn-success-text: var(--white);

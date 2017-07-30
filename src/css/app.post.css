@@ -2,6 +2,7 @@
 
 @import "/base/_mixins.post.css";
 @import "/base/_variables.post.css";
+@import "/base/grid.post.css";
 @import "/base/cards.post.css";
 @import "/base/colors.post.css";
 @import "/base/base.post.css";

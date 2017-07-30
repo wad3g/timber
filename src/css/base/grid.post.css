@@ -1,0 +1,319 @@
+/* For mobile phones: */
+
+.container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.columns {
+    display: block;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+.x1 {
+    width: 100%;
+    margin: 0.5em 0 0 0.5em;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: blue;
+    height: 5rem;
+}
+
+.x2 {
+    width: 50%;
+    margin: 0.5em 0 0 0.5em;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: red;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.x3 {
+    width: 33.33333%;
+    margin: 0.5em 0 0 0.5em;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: green;
+    height: 5rem;
+}
+
+.x4 {
+    width: 25%;
+    margin: 0.5em 0 0 0.5em;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: yellow;
+    height: 5rem;
+}
+
+.x5 {
+    width: 20%;
+    margin: 0.5em 0 0 0.5em;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: purple;
+    height: 5rem;
+}
+
+.x6 {
+    width: 16.66667%;
+    margin: 0.5em 0 0 0.5em;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: pink;
+    height: 5rem;
+}
+
+@media only screen and (min-width: 48em) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .x1 {
+        flex: 1;
+        flex-basis: calc(95% / 6 * 1);
+        max-width: calc(95% / 6 * 1);
+        margin: +0.5rem 0 0 +0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        height: 5rem;
+    }
+
+    .x2 {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: calc(100% / 6 * 2);
+        max-width: calc(100% / 6 * 2);
+        margin: 0.5rem 0 0 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: orange;
+        height: 5rem;
+    }
+
+    .x3 {
+        flex: 1;
+        flex-basis: calc(95% / 6 * 3);
+        max-width: calc(95% / 6 * 3);
+        margin: 0.5rem 0 0 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: purple;
+        height: 5rem;
+    }
+
+    .x4 {
+        flex: 1;
+        flex-basis: calc(95% / 6 * 4);
+        max-width: calc(95% / 6 * 4);
+        margin: 0.5rem 0 0 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: yellow;
+        height: 5rem;
+    }
+
+    .x5 {
+        flex: 1;
+        flex-basis: calc(95% / 6 * 5);
+        max-width: calc(95% / 6 * 5);
+        margin: 0.5rem 0 0 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: purple;
+        height: 5rem;
+    }
+
+    .x6 {
+        flex: 1;
+        flex-basis: calc(95% / 6 * 6);
+        max-width: calc(95% / 6 * 6);
+        margin: 0.5rem 0 0 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: pink;
+        height: 5rem;
+    }
+}
+
+@media only screen and (min-width: 68.75em) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+    }
+}
+
+.start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.Grid {
+    display: flex;
+}
+
+.Grid-cell {
+    flex: 1;
+}
+
+.Grid--gutters {
+    margin: -0.5rem 0 0 -0.5rem;
+}
+
+.Grid--gutters > .Grid-cell {
+    margin: 0.5rem 0 0 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/*
+Alignment per row
+*/
+
+.Grid--top {
+    align-items: flex-start;
+}
+
+.Grid--bottom {
+    align-items: flex-end;
+}
+
+.Grid--center {
+    align-items: center;
+}
+
+/*
+Alignment per cell
+*/
+
+.Grid-cell--top {
+    align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+    align-self: flex-end;
+}
+
+.Grid-cell--center {
+    align-self: center;
+}
+
+/*
+Base classes for all media
+*/
+
+.Grid--fit > .Grid-cell {
+    flex: 1;
+}
+
+.Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+}
+
+.Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+}
+
+.Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%;
+}
+
+.Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%;
+}
+
+/*
+Small to medium screens
+*/
+
+@media (min-width: 24em) {
+    .small-Grid--fit > .Grid-cell {
+        flex: 1;
+    }
+
+    .small-Grid--full > .Grid-cell {
+        flex: 0 0 100%;
+    }
+
+    .small-Grid--1of2 > .Grid-cell {
+        flex: 0 0 50%;
+    }
+
+    .small-Grid--1of3 > .Grid-cell {
+        flex: 0 0 33.3333%;
+    }
+
+    .small-Grid--1of4 > .Grid-cell {
+        flex: 0 0 25%;
+    }
+}
+
+/*
+Large screens
+*/
+
+@media (min-width: 48em) {
+    .large-Grid--fit > .Grid-cell {
+        flex: 1;
+    }
+
+    .large-Grid--full > .Grid-cell {
+        flex: 0 0 100%;
+    }
+
+    .large-Grid--1of2 > .Grid-cell {
+        flex: 0 0 50%;
+    }
+
+    .large-Grid--1of3 > .Grid-cell {
+        flex: 0 0 33.3333%;
+    }
+
+    .large-Grid--1of4 > .Grid-cell {
+        flex: 0 0 25%;
+    }
+}

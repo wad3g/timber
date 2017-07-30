@@ -316,3 +316,12 @@
         background-image: linear-gradient(-120deg, $background-color, color($background-color lightness(-15%) saturation(+40%) hue(-15)));
     }
 }
+
+@define-mixin test $background-color, $background-color2, $border-color: transparent {
+
+    & {
+        border-size: 3px;
+        border-radius: 100%;
+        border-image: linear-gradient(-120deg, $background-color, color($background-color2 lightness(-15%) saturation(+40%) hue(-15)));
+    }
+}

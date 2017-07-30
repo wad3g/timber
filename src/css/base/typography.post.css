@@ -5,7 +5,18 @@ h4,
 h5,
 h6 {
     font-weight: var(--fw-600);
+}
+
+h1,
+h2,
+h3,
+h4 {
     margin-bottom: var(--baseline);
+}
+
+h5,
+h6 {
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -65,10 +76,6 @@ li {
 p {
     line-height: var(--baseline);
     margin-bottom: var(--baseline);
-
-    + ul {
-        margin-left: 2rem;
-    }
 }
 
 blockquote {
@@ -133,9 +140,10 @@ pre > code {
     border-radius: 0.2rem;
     padding: 0.6rem 0.8rem;
     display: block;
-    white-space: pre-line;
+    white-space: pre;
     color: var(--pink);
     max-width: 40em;
+    overflow: auto;
 }
 
 code {

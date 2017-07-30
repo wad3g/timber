@@ -19,10 +19,5 @@ p,
 ul,
 ol,
 form {
-    margin-bottom: 1.5rem;
-}
-
-ul,
-ol {
-    margin-left: 2rem;
+    margin-bottom: var(--baseline);
 }
